@@ -1,0 +1,473 @@
+{
+	"resourceType": "Questionnaire",
+	"id": "sociodemographic",
+	"identifier": [
+		{
+			"system": "https://k-healthinair.eu/fhir/questionnaire-codes",
+			"value": "SOCIODEMOGRAPHIC"
+		}
+	],
+	"url": "https://k-healthinair.eu/fhir/Questionnaire/sociodemographic",
+	"name": "SOCIODEMOGRAPHIC",
+	"title": "Sociodemographic questions",
+	"description": "Socio-demographic data",
+	"purpose": "Sociodemographic questions",
+	"version": "1.0.0",
+	"status": "active",
+	"date": "2025-01-01T00:00:00+00:00",
+	"subjectType": [
+		"Patient"
+	],
+	"publisher": "K-HEALTHinAIR",
+	"item": [
+		{
+			"linkId": "yearofbirth",
+			"text": "In what year were you born?",
+			"type": "string",
+			"required": false
+		},
+		{
+			"linkId": "countryofbirth",
+			"text": "Country of birth",
+			"type": "string",
+			"required": false
+		},
+		{
+			"linkId": "countryofbirth2",
+			"text": "In what other country were you born?",
+			"type": "string",
+			"required": false
+		},
+		{
+			"linkId": "sex",
+			"text": "Please indicate your sex at birth",
+			"type": "coding",
+			"required": false,
+			"answerOption": [
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "1",
+						"display": "Male"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "2",
+						"display": "Female"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "3",
+						"display": "Other"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "999",
+						"display": "Undisclosed"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "educationlevel_oah",
+			"text": "Please indicate your highest level of schooling:",
+			"type": "coding",
+			"required": false,
+			"answerOption": [
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "0",
+						"display": "None"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "1",
+						"display": "Early Childhood Education"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "2",
+						"display": "Primary Education"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "3",
+						"display": "Lower Secondary Education"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "4",
+						"display": "Upper Secondary Education"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "5",
+						"display": "Short Cycle Tertiary Education"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "6",
+						"display": "Bachelor’s or Equivalent Level"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "7",
+						"display": "Master’s or Equivalent Level"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "8",
+						"display": "Doctoral or Equivalent Level"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "9",
+						"display": "Mandatory school"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "10",
+						"display": "Technical school/apprenticeship"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "11",
+						"display": "High school diploma"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "relationshipstatus",
+			"text": "What is your work status?",
+			"type": "coding",
+			"required": false,
+			"answerOption": [
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "0",
+						"display": "Unemployed"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "1",
+						"display": "Part-time employment"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "2",
+						"display": "Full-time employment"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "3",
+						"display": "Retired"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "4",
+						"display": "Unpaid work (student, caregiver, homemaker, volunteer, etc.)"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "5",
+						"display": "Self employed"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "work_ext___0",
+			"text": "Work profession? (Unemployed)",
+			"type": "boolean",
+			"required": false
+		},
+		{
+			"linkId": "work_ext___1",
+			"text": "Work profession? (Part-time employment)",
+			"type": "boolean",
+			"required": false
+		},
+		{
+			"linkId": "work_ext___2",
+			"text": "Work profession? (Full-time employment)",
+			"type": "boolean",
+			"required": false
+		},
+		{
+			"linkId": "work_ext___3",
+			"text": "Work profession? (Retired)",
+			"type": "boolean",
+			"required": false
+		},
+		{
+			"linkId": "work_ext___4",
+			"text": "Work profession? (Unpaid work: student, caregiver, homemaker, volunteer, etc.)",
+			"type": "boolean",
+			"required": false
+		},
+		{
+			"linkId": "work_ext___5",
+			"text": "Work profession? (Rather not to answer)",
+			"type": "boolean",
+			"required": false
+		},
+		{
+			"linkId": "work_job",
+			"text": "Work profession?",
+			"type": "string",
+			"required": false
+		},
+		{
+			"linkId": "timespent5",
+			"text": "For how many years have you been working in this scenario?",
+			"type": "string",
+			"required": false
+		},
+		{
+			"linkId": "livingarrangements1",
+			"text": "Living arrangements",
+			"type": "coding",
+			"required": false,
+			"answerOption": [
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "0",
+						"display": "Lives alone"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "1",
+						"display": "Lives with others (family, friends, partner)"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "2",
+						"display": "Lives in supported home (i.e. assisted living, congregate care, skilled nursing home, etc.)"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "999",
+						"display": "Rather not to answer"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "livingarrengements2",
+			"text": "How many people live with you? (Not counting yourself) (0-15)",
+			"type": "integer",
+			"required": false
+		},
+		{
+			"linkId": "ethnicity",
+			"text": "Please indicate the ethnicity that you identify with:",
+			"type": "coding",
+			"required": false,
+			"answerOption": [
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "1",
+						"display": "African/American"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "2",
+						"display": "Caucasian"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "3",
+						"display": "Northeast Asian"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "4",
+						"display": "Other"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "5",
+						"display": "Southeast Asian"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "alcoholamount",
+			"text": "How many standard alcoholic drinks do you drink per week?",
+			"type": "integer",
+			"required": false
+		},
+		{
+			"linkId": "smokingstatus1",
+			"text": "Please indicate your smoking behavior",
+			"type": "coding",
+			"required": false,
+			"answerOption": [
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "0",
+						"display": "Current daily smoker"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "1",
+						"display": "Current weekly smoker"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "2",
+						"display": "Former smoker"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "3",
+						"display": "Never smoker"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "4",
+						"display": "Others"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "999",
+						"display": "Rather not to answer"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "smokestatus2___1",
+			"text": "Tobacco",
+			"type": "boolean",
+			"required": false
+		},
+		{
+			"linkId": "smokestatus2___2",
+			"text": "Marijuana/ Cannabis",
+			"type": "boolean",
+			"required": false
+		},
+		{
+			"linkId": "smokestatus2___3",
+			"text": "Prescripcion drugs",
+			"type": "boolean",
+			"required": false
+		},
+		{
+			"linkId": "smokestatus2___4",
+			"text": "Others",
+			"type": "boolean",
+			"required": false
+		},
+		{
+			"linkId": "passivesmoke",
+			"text": "Are you expose to passive smoking at home?",
+			"type": "coding",
+			"required": false,
+			"answerOption": [
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "0",
+						"display": "No"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "1",
+						"display": "Yes"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "height_2",
+			"text": "Height (cm)",
+			"type": "integer",
+			"required": false
+		},
+		{
+			"linkId": "weight_2",
+			"text": "Weight (Kg)",
+			"type": "integer",
+			"required": false
+		},
+		{
+			"linkId": "bmivalue_2",
+			"text": "BMI",
+			"type": "integer",
+			"required": false
+		}
+	]
+}

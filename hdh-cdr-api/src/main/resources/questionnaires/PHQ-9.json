@@ -1,0 +1,377 @@
+{
+	"resourceType": "Questionnaire",
+	"id": "phq-9",
+	"identifier": [
+		{
+			"system": "https://k-healthinair.eu/fhir/questionnaire-codes",
+			"value": "PHQ9"
+		}
+	],
+	"url": "https://k-healthinair.eu/fhir/Questionnaire/phq9",
+	"name": "PHQ9",
+	"title": "Patient Health Questionnaire (PHQ-9)",
+	"description": "A self-administered screening tool used to assess the presence and severity of depression in adolescents and adults. It is derived from the full PHQ and is widely used in both clinical practice and research.",
+	"purpose": "To screen for depression, monitor severity, and evaluate treatment response",
+	"version": "1.0.0",
+	"status": "active",
+	"date": "2025-01-01T00:00:00+00:00",
+	"subjectType": [
+		"Patient"
+	],
+	"publisher": "K-HEALTHinAIR",
+	"code": [
+		{
+			"system": "http://snomed.info/sct",
+			"code": "763264000",
+			"display": "Patient Health Questionnaire-9 (PHQ-9) depression screening tool (assessment scale)"
+		},
+		{
+			"system": "http://loinc.org",
+			"code": "44249-1",
+			"display": "PHQ-9 (Patient Health Questionnaire-9) panel"
+		}
+	],
+	"item": [
+		{
+			"linkId": "phq9_1",
+			"text": "Little interest or pleasure in doing things",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "0",
+						"display": "Not at all"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "1",
+						"display": "Several days"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "2",
+						"display": "More than half the days"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "3",
+						"display": "Nearly every day"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "phq9_2",
+			"text": "Feeling down, depressed, or hopeless",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "0",
+						"display": "Not at all"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "1",
+						"display": "Several days"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "2",
+						"display": "More than half the days"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "3",
+						"display": "Nearly every day"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "phq9_3",
+			"text": "Trouble falling or staying asleep, or sleeping too much",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "0",
+						"display": "Not at all"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "1",
+						"display": "Several days"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "2",
+						"display": "More than half the days"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "3",
+						"display": "Nearly every day"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "phq9_4",
+			"text": "Feeling tired or having little energy",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "0",
+						"display": "Not at all"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "1",
+						"display": "Several days"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "2",
+						"display": "More than half the days"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "3",
+						"display": "Nearly every day"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "phq9_5",
+			"text": "Going to the shop",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "0",
+						"display": "Not at all"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "1",
+						"display": "Several days"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "2",
+						"display": "More than half the days"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "3",
+						"display": "Nearly every day"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "phq9_6",
+			"text": "Poor appetite or overeating",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "0",
+						"display": "Not at all"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "1",
+						"display": "Several days"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "2",
+						"display": "More than half the days"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "3",
+						"display": "Nearly every day"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "phq9_7",
+			"text": "Feeling bad about yourself or that you are a failure or have let yourself or your family down",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "0",
+						"display": "Not at all"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "1",
+						"display": "Several days"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "2",
+						"display": "More than half the days"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "3",
+						"display": "Nearly every day"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "phq9_8",
+			"text": "Trouble concentrating on things, such as reading the newspaper or watching television",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "0",
+						"display": "Not at all"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "1",
+						"display": "Several days"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "2",
+						"display": "More than half the days"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "3",
+						"display": "Nearly every day"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "phq9_9",
+			"text": "Moving or speaking so slowly that other people could have noticed. Or the opposite being so figety or restless that you have been moving around a lot more than usual",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "0",
+						"display": "Not at all"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "1",
+						"display": "Several days"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "2",
+						"display": "More than half the days"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "3",
+						"display": "Nearly every day"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "phq9_score",
+			"text": "Score: 1-4 Minimal depression, 5-9 Mild depression, 10-14 Moderate depression, 15-19 Moderately severe depression, 20-27 Severe depression",
+			"type": "integer",
+			"code": [
+				{
+					"system": "http://loinc.org",
+					"code": "44261-6",
+					"display": "Patient Health Questionnaire 9 item (PHQ-9) total score"
+				},
+				{
+					"system": "http://snomed.info/sct",
+					"code": "442613001 ",
+					"display": "Patient Health Questionnaire-9 score (observable entity)"
+				}
+			],
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-calculatedExpression",
+					"valueExpression": {
+						"language": "text/fhirpath",
+						"expression": "item.where(linkId='phq9_1').answer.value + item.where(linkId='phq9_2').answer.value + item.where(linkId='phq9_3').answer.value + item.where(linkId='phq9_4').answer.value + item.where(linkId='phq9_5').answer.value + item.where(linkId='phq9_6').answer.value+ item.where(linkId='phq9_7').answer.value + item.where(linkId='phq9_8').answer.value + item.where(linkId='phq9_9').answer.value"
+					}
+				}
+			]
+		}
+	]
+}

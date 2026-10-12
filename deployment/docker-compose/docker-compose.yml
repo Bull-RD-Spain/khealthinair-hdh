@@ -1,0 +1,95 @@
+####### KHEALTHinAIR ############################################################################
+# This docker-compose builds the local images from the repo sources            #
+# (hdh-cdr and hdh-cdr-api), tagged with the HDH_*_VERSION env vars            #
+#################################################################################################
+# Copy khealthinair-hdh-cdr.env.example to .env (or pass it via --env-file) and
+# replace the CHANGE_ME placeholders; never commit the file with real values, e.g.:
+# podman compose --env-file ./khealthinair-hdh-cdr.env up -d
+
+# docker network create khealthinair-hdh-net
+networks:
+  khealthinair-hdh-net:
+#    external: true
+# docker volume create --name khealthinair-hdh-cdr-data  # --opt type=none --opt device=<platform_path>/data/hdh-cdr-data --opt o=bind
+volumes:
+  khealthinair-hdh-cdr-db-data:
+#    external: true
+
+services:
+####### HDH-CDR-DB #######
+  hdh-cdr-db:
+    container_name: hdh-cdr-db
+    image: postgres:17.0
+#    ports:
+#      - 5432:5432
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+    restart: always
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB} --quiet"]
+      interval: 10s
+      retries: 5
+      timeout: 5s
+      start_period: 10s
+    volumes:
+      - khealthinair-hdh-cdr-db-data:/var/lib/postgresql/data
+    networks:
+      - khealthinair-hdh-net
+
+####### HDH-CDR #######
+  hdh-cdr:
+    container_name: hdh-cdr
+    image: khealthinair/hdh-cdr:${HDH_CDR_VERSION}
+    build:
+      context: ../../hdh-cdr
+    ports:
+      - 8080:8080
+    depends_on:
+      hdh-cdr-db:
+        condition: service_healthy
+    environment:
+      - LOGGING_MODE=${CDR_LOGGING_MODE}
+      - DATASOURCE_URL=${DATASOURCE_URL}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - CDR_HAPI_FHIR_SERVER_ADDRESS=${CDR_HAPI_FHIR_SERVER_ADDRESS}
+    restart: always
+    healthcheck:
+      test: "curl --fail 'http://hdh-cdr:8080/hdh-cdr/actuator/health' || exit 1"
+      interval: 60s
+      retries: 5
+      timeout: 10s
+      start_period: 30s
+    networks:
+      - khealthinair-hdh-net
+
+####### HDH-CDR-API #######
+  hdh-cdr-api:
+    profiles:
+      - donotstart # Do not add extra requests during dev if not needed
+    container_name: hdh-cdr-api
+    image: khealthinair/hdh-cdr-api:${HDH_CDR_API_VERSION}
+    build:
+      context: ../../hdh-cdr-api
+    ports:
+      - 8081:8081
+    depends_on:
+      hdh-cdr:
+        condition: service_healthy
+    environment:
+      - LOGGING_MODE=${CDR_LOGGING_MODE}
+      - CDR_API_CONTEXTPATH=${CDR_API_CONTEXTPATH}
+      - CDR_HAPI_FHIR_SERVER_ADDRESS=${CDR_HAPI_FHIR_SERVER_ADDRESS}
+      - APIKEY_ADMIN=${APIKEY_ADMIN}
+      - APIKEY_PILOT=${APIKEY_PILOT}
+    restart: always
+    healthcheck:
+      test: "curl --fail 'http://hdh-cdr-api:8081/health/ready' || exit 1"
+      interval: 60s
+      retries: 5
+      timeout: 10s
+      start_period: 30s
+    networks:
+      - khealthinair-hdh-net

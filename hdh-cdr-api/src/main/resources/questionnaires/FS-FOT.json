@@ -1,0 +1,745 @@
+{
+	"resourceType": "Questionnaire",
+	"id": "fs-fot",
+	"identifier": [
+		{
+			"system": "https://k-healthinair.eu/fhir/questionnaire-codes",
+			"value": "FSFOT"
+		}
+	],
+	"url": "https://k-healthinair.eu/fhir/Questionnaire/fs-fot",
+	"name": "FSFOT",
+	"title": "FS FOT",
+	"description": "",
+	"purpose": "",
+	"version": "1.0.0",
+	"status": "active",
+	"date": "2025-01-01T00:00:00+00:00",
+	"subjectType": [
+		"Patient"
+	],
+	"publisher": "K-HEALTHinAIR",
+	"item": [
+		{
+			"linkId": "f1",
+			"text": "Date of assessment",
+			"type": "date"
+		},
+		{
+			"linkId": "fs_validation",
+			"text": "Validated",
+			"type": "boolean"
+		},
+		{
+			"linkId": "fs_no_validada",
+			"text": "No validated observations",
+			"type": "text",
+			"required": false
+		},
+		{
+			"linkId": "pruebas_funcionales",
+			"text": "Functional test",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "1ª - BASAL"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "2ª - 6M"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "3ª - 12M"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "3ª - 18M"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "4ª - 24M"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "6",
+						"display": "5ª - 30M"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "7",
+						"display": "Protocolo 2"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "protocolo_2_ciclo",
+			"text": "PROTOCOLO 2",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "CICLO 1"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "CICLO 2"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "CICLO 3"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "CICLO 4"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "CICLO 5"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "6",
+						"display": "CICLO 6"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "7",
+						"display": "CICLO 7"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "8",
+						"display": "CICLO 8"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "9",
+						"display": "CICLO 9"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "10",
+						"display": "CICLO 10"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "11",
+						"display": "CICLO 11"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "12",
+						"display": "CICLO 12"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "performance",
+			"text": "WHERE HAS BEEN PERFORMED?",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "HOSPITAL CLINIC"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "CAP NUMANCIA"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "CAPSBE"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "PATIENT'S HOME"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "dental_prostheses",
+			"text": "REMOVABLE DENTAL PROSTHESES",
+			"type": "boolean"
+		},
+		{
+			"linkId": "dental_removed",
+			"text": "HAS BEEN REMOVED FOR THE TEST?",
+			"type": "boolean"
+		},
+		{
+			"linkId": "smoke",
+			"text": "SMOKED LESS THAN 1 HOUR AGO?",
+			"type": "boolean"
+		},
+		{
+			"linkId": "inhaler",
+			"text": "THE PATIENT HAS TAKEN INHALERS ONE HOUR BEFORE?",
+			"type": "boolean"
+		},
+		{
+			"linkId": "inhalers",
+			"text": "WHICH ONE?",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "FORMOTEROL"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "INDICATEROL"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "IPATROPIO"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "SALBUMATOL"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "SALMETEROL"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "6",
+						"display": "TERBUTALINA"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "7",
+						"display": "TIOTROPIO"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "8",
+						"display": "OTHER"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "inhalers_push",
+			"text": "HOW MANY PUSH? (1-5)",
+			"type": "integer"
+		},
+		{
+			"linkId": "symptoms",
+			"text": "Explain why",
+			"type": "text",
+			"required": false
+		},
+		{
+			"linkId": "pulsioximetria",
+			"text": "Pulsioximetría % (80-100)",
+			"type": "integer"
+		},
+		{
+			"linkId": "ta2",
+			"text": "Tensión Arterial",
+			"type": "text",
+			"required": false
+		},
+		{
+			"linkId": "fc1",
+			"text": "Frecuencia Cardíaca (10-200)",
+			"type": "text",
+			"required": false
+		},
+		{
+			"linkId": "smokestatus",
+			"text": "Have you ever smoked?",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "No"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Si, pero ya no fumo"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Si, sigo fumando"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "smokerstatus1",
+			"text": "¿Con cuantos años empezaste a fumar? (0-100)",
+			"type": "text",
+			"required": true
+		},
+		{
+			"linkId": "smokerstatus2",
+			"text": "¿Hasta cuando? Años que tenía en el que terminó de fumar o si sigue fumando ahora (0-100)",
+			"type": "text",
+			"required": true
+		},
+		{
+			"linkId": "smokerstatus3",
+			"text": "Total de años fumando",
+			"type": "text",
+			"required": true
+		},
+		{
+			"linkId": "smokerstatus4",
+			"text": "Nº de cigarrillos/cajetilla fumados de media: 10 cigarrillos = 0.5 cajetillas / 20 cigarrillos = 1 cajetillas (0-60)",
+			"type": "text",
+			"required": true
+		},
+		{
+			"linkId": "smokerstatus5",
+			"text": "Total de paquetes fumados",
+			"type": "text",
+			"required": true
+		},
+		{
+			"linkId": "ethnicity_2",
+			"text": "Ethnicity",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "African/ American"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Caucasian"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Northeast Asian"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Other"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Southeast Asian"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "edad",
+			"text": "Edad",
+			"type": "integer",
+			"required": true
+		},
+		{
+			"linkId": "height",
+			"text": "Height (cm)",
+			"type": "integer",
+			"required": true
+		},
+		{
+			"linkId": "weight",
+			"text": "Weight (Kg)",
+			"type": "integer",
+			"required": true
+		},
+		{
+			"linkId": "bmivalue",
+			"text": "BMI Value",
+			"type": "integer",
+			"required": true
+		},
+		{
+			"linkId": "collaborative",
+			"text": "PATIENT'S COLLABORATION",
+			"type": "boolean"
+		},
+		{
+			"linkId": "emotion",
+			"text": "THE PATIENT WAS:",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "ANXIOUS"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "STREES"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "SCARED"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "ANGRY"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "6",
+						"display": "NERVOUS"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "7",
+						"display": "CRYING"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "8",
+						"display": "SCREAMING"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "9",
+						"display": "LABILE"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "10",
+						"display": "APATHETIC"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "lothar_fot",
+			"text": "PROBLEMAS TÉCNICOS",
+			"type": "boolean"
+		},
+		{
+			"linkId": "fot_realized",
+			"text": "HOW MANY FOT REALIZED (1-8)",
+			"type": "integer",
+			"required": true
+		},
+		{
+			"linkId": "qualitygrading_fot",
+			"text": "QUALITY GRADING:",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "A (EXCELLENT)"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "B (GOOD)"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "C-D-E (ACCEPTABLE)"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "U (USABLE)"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "F (UNACCEPTABLE)"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "r5",
+			"text": "RESISTANCE: R5 [kPa*s/L]:",
+			"type": "text",
+			"required": true
+		},
+		{
+			"linkId": "r20",
+			"text": "RESISTANCE: R20 [kPa*s/L]:",
+			"type": "text",
+			"required": true
+		},
+		{
+			"linkId": "r5_20",
+			"text": "RESISTANCE: R5-R20 [kPa*s/L]:",
+			"type": "text",
+			"required": true
+		},
+		{
+			"linkId": "ax",
+			"text": "AX [kPa/L]:",
+			"type": "text",
+			"required": false
+		},
+		{
+			"linkId": "reactance",
+			"text": "REACTANCE: X5 [kPa*s/L]:",
+			"type": "text",
+			"required": false
+		},
+		{
+			"linkId": "resonance_frequency",
+			"text": "RESONANCE FREQUENCY: Fres [1|s]:",
+			"type": "text",
+			"required": true
+		},
+		{
+			"linkId": "fot_origen",
+			"text": "The source for FOT is:",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "Lothar"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "6 Months"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "HCB"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "lothar_fs",
+			"text": "PROBLEMAS TÉCNICOS",
+			"type": "boolean"
+		},
+		{
+			"linkId": "spirometry_realized",
+			"text": "HOW MANY FOT REALIZED (1-8)",
+			"type": "integer",
+			"required": true
+		},
+		{
+			"linkId": "qualitygrading_fs",
+			"text": "QUALITY GRADING FS FEV1:",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "A (EXCELLENT)"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "B (GOOD)"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "C-D-E (ACCEPTABLE)"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "U (USABLE)"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "F (UNACCEPTABLE)"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "qualitygrading_fs_fvc",
+			"text": "QUALITY GRADING FS FVC:",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "A (EXCELLENT)"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "B (GOOD)"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "C-D-E (ACCEPTABLE)"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "U (USABLE)"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "F (UNACCEPTABLE)"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "fvc",
+			"text": "FORCED VITAL CAPACITY (FVC): FVC [L]:",
+			"type": "text",
+			"required": true
+		},
+		{
+			"linkId": "fev1",
+			"text": "FORCED EXPIRATORY VOLUME IN THE FIRST SECOND (FEV1): FEV1 [L]:",
+			"type": "text",
+			"required": true
+		},
+		{
+			"linkId": "fev1_fvc",
+			"text": "FV1/FVC [%]:",
+			"type": "text",
+			"required": true
+		},
+		{
+			"linkId": "pef",
+			"text": "PEF[L/s] PICO DEL FLUJO ESPIRATORIO:",
+			"type": "text",
+			"required": true
+		},
+		{
+			"linkId": "fs_origen",
+			"text": "The source for FS is:",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "Lothar"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "6 Months"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "HCB"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "BASAL MODIFICADA"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "lung_test_comments",
+			"text": "COMMENTS",
+			"type": "text",
+			"required": true
+		},
+		{
+			"linkId": "lung_test_comments_alds",
+			"text": "COMMENTS ALDS",
+			"type": "text",
+			"required": true
+		}
+	]
+}

@@ -1,0 +1,495 @@
+{
+	"resourceType": "Questionnaire",
+	"id": "paris",
+	"identifier": [
+		{
+			"system": "https://k-healthinair.eu/fhir/questionnaire-codes",
+			"value": "PaRIS"
+		}
+	],
+	"url": "https://k-healthinair.eu/fhir/Questionnaire/paris",
+	"name": "PaRIS",
+	"title": "PaRIS Survey (Patient-Reported Indicator Surveys)",
+	"description": "The WHO-5 is a short questionnaire measuring subjective well-being over the last two weeks",
+	"purpose": "An initiative by the OECD to collect internationally comparable data on patient-reported indicators of health. It includes measures of health status, quality of life, and access to care, aiming to inform health policy and improve patient outcomes.​.",
+	"version": "1.0.0",
+	"status": "active",
+	"date": "2025-01-01T00:00:00+00:00",
+	"subjectType": [
+		"Patient"
+	],
+	"publisher": "K-HEALTHinAIR",
+	"item": [
+		{
+			"linkId": "accesibility",
+			"text": "Accesibility",
+			"type": "group",
+			"item": [
+				{
+					"linkId": "accesibility1",
+					"text": "How easy or difficult is it to get medical care in the evenings, on weekends, or holidays without going to the hospital?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Very easy"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Somewhat easy"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "Somewhat difficult"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "Very difficult"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "Never needed care in those times"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "D",
+								"display": "Not sure"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "R",
+								"display": "Decline to answer"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "accesibility2",
+					"text": "How quickly did you get an appointment to see your doctor?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Very quickly"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Somewhat quickly"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "Somewhat difficult"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "Very difficult"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "Never needed care in those times"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "D",
+								"display": "Not sure"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "R",
+								"display": "Decline to answer"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "accesibility3",
+					"text": "Was the time you waited for the appointment for your doctor? (in days)",
+					"type": "integer"
+				},
+				{
+					"linkId": "accesibility3_1",
+					"text": "Was the time you waited for the appointment for your doctor? (in days)",
+					"type": "string"
+				},
+				{
+					"linkId": "accesibility4",
+					"text": "On the actual day of the consultation, how long did you wait before being seen? (in minutes)",
+					"type": "integer"
+				},
+				{
+					"linkId": "accesibility4_1",
+					"text": "On the actual day of the consultation, how long did you wait before being seen? (in minutes)",
+					"type": "string"
+				},
+				{
+					"linkId": "accesibility5",
+					"text": "Was the time you waited to be seen a problem for you?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "No"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "D",
+								"display": "Not sure"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "R",
+								"display": "Decline to answer"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"linkId": "communication",
+			"text": "Communication",
+			"type": "group",
+			"item": [
+				{
+					"linkId": "communication1",
+					"text": "Did the doctor/nurse spend enough time with you?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "No"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "D",
+								"display": "Not sure"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "R",
+								"display": "Decline to answer"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "communication2",
+					"text": "During your communication with the health staff, how often did your doctor/nurse treat you with courtesy and respect?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Always"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Often"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "Sometimes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "Rarely or never"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "Never tried to contact"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "D",
+								"display": "Not sure"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "R",
+								"display": "Decline to answer"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "communication3",
+					"text": "Did this give you an opportunity to ask questions or raise concerns about recommended treatment?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "No"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "D",
+								"display": "Not sure"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "R",
+								"display": "Decline to answer"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"linkId": "sharedecisionmaking",
+			"text": "Shared Decision making",
+			"type": "group",
+			"item": [
+				{
+					"linkId": "sharedecisionmaking1",
+					"text": "In the past year, has any health care professional discussed your main goals or priorities for your condition?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "No"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "D",
+								"display": "Not sure"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "R",
+								"display": "Decline to answer"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "sharedecisionmaking2",
+					"text": "Were you involved as much as you wanted in decisions about your care and treatment?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "No"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "D",
+								"display": "Not sure"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "R",
+								"display": "Decline to answer"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"linkId": "continuityandcoordination",
+			"text": "Continuity and Coordination",
+			"type": "group",
+			"item": [
+				{
+					"linkId": "continuityandcoordination1",
+					"text": "Is there one doctor you usually go to for your medical care?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes, have a regular doctor/GP"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Yes, but have more than one regular doctor/GP"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "No"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "Yes, have nurse practitioner or physician assistant"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "D",
+								"display": "Not sure"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "R",
+								"display": "Decline to answer"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "continuityandcoordination2",
+					"text": "How many different doctors have you seen in the past 12 months (not including hospitalizations)?",
+					"type": "integer"
+				},
+				{
+					"linkId": "continuityandcoordination2_1",
+					"text": "How many different doctors have you seen in the past 12 months (not including hospitalizations)?",
+					"type": "string"
+				},
+				{
+					"linkId": "continuityandcoordination3",
+					"text": "In the past 2 years, was there a time when a medical test was repeated unnecessarily?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes, this happened"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "No"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "Not Applicable"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "D",
+								"display": "Not Sure"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "R",
+								"display": "Decline to Answer"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "continuityandcoordination4",
+					"text": "In the past 12 months, has a doctor or pharmacist reviewed with you all the medications you take?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "No"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "D",
+								"display": "Not sure"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "R",
+								"display": "Decline to answer"
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

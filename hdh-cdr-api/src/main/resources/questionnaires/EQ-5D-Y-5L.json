@@ -1,0 +1,274 @@
+{
+	"resourceType": "Questionnaire",
+	"id": "eq5dy5l",
+	"identifier": [
+		{
+			"system": "https://k-healthinair.eu/fhir/questionnaire-codes",
+			"value": "EQ5DY5L"
+		}
+	],
+	"url": "https://k-healthinair.eu/fhir/Questionnaire/eq5d5l",
+	"name": "EQ5D5L",
+	"title": "5-level EQ-5D-Y-5L Questionnaire",
+	"description": "5-level EQ-5D",
+	"purpose": "A standardized instrument for measuring health-related quality of life (youth version). It consists of five dimensions: mobility, self-care, usual activities, pain/discomfort, and anxiety/depression, each with five levels of severity. It provides a simple descriptive profile and a single index value for health status.",
+	"version": "1.0.0",
+	"status": "active",
+	"date": "2025-01-01T00:00:00+00:00",
+	"subjectType": [
+		"Patient"
+	],
+	"publisher": "K-HEALTHinAIR",
+	"code": [
+		{
+			"system": "http://snomed.info/sct",
+			"code": "770633007",
+			"display": "EuroQol Five Dimension (Youth) instrument (assessment scale)"
+		}
+	],
+	"item": [
+		{
+			"linkId": "eq5dy5l_mobility",
+			"text": "Mobility (walking about)",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "1",
+						"display": "No problems walking about"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "2",
+						"display": "A little bit of a problem walking about"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "3",
+						"display": "Some problems walking about"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "4",
+						"display": "A lot of problems walking about"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "5",
+						"display": "I cannot walk about"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "eq5dy5l_selfcare",
+			"text": "Looking after myself",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "1",
+						"display": "No problems washing or dressing myself"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "2",
+						"display": "A little bit of a problem washing or dressing myself"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "3",
+						"display": "Some problems washing or dressing myself"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "4",
+						"display": "A lot of problems washing or dressing myself"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "5",
+						"display": "I cannot wash or dress myself"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "eq5dy5l_usualActivities",
+			"text": "Doing usual activities (e.g. going to school, hobbies, sports, playing, doing things with family or friends)",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "1",
+						"display": "No problems doing my usual activities"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "2",
+						"display": "A little bit of a problem doing my usual activities"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "3",
+						"display": "Some problems doing my usual activities"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "4",
+						"display": "A lot of problems doing my usual activities"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "5",
+						"display": "I cannot do my usual activities"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "eq5dy5l_pain",
+			"text": "Pain or other complaints",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "1",
+						"display": "No pain or other complaints"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "2",
+						"display": "A little bit of pain or complaints"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "3",
+						"display": "Some pain or complaints"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "4",
+						"display": "A lot of pain or complaints"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "5",
+						"display": "I cannot (extreme pain or complaints)"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "eq5dy5l_anxiety",
+			"text": "Feeling worried, sad or unhappy",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "1",
+						"display": "Not worried, sad or unhappy"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "2",
+						"display": "A little bit worried, sad or unhappy"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "3",
+						"display": "Somewhat worried, sad or unhappy"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "4",
+						"display": "A lot of worry, sadness or unhappiness"
+					}
+				},
+				{
+					"valueCoding": {
+						"system": "https://k-healthinair.eu",
+						"code": "5",
+						"display": "I cannot (extremely worried, sad or unhappy)"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "eq5dy5l_score",
+			"text": "The best health you can imagine",
+			"type": "integer",
+			"code": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "763961000000104",
+					"display": "EQ-5D score (observable entity)"
+				}
+			],
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-calculatedExpression",
+					"valueExpression": {
+						"language": "text/fhirpath",
+						"expression": "%resource.item.where(linkId='eq5d5l_mobility').answer.valueInteger.toString() + %resource.item.where(linkId='eq5d5l_selfcare').answer.valueInteger.toString() + %resource.item.where(linkId='eq5d5l_usualActivities').answer.valueInteger.toString() + %resource.item.where(linkId='eq5d5l_pain').answer.valueInteger.toString() + %resource.item.where(linkId='eq5d5l_anxiety').answer.valueInteger.toString()"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "eq5dy5l_eq_vas",
+			"text": "EQ-VAS (0 - 100)",
+			"type": "integer",
+			"code": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "764011000000106",
+					"display": "EQ-5D visual analogue scale score (observable entity)"
+				}
+			]
+		}
+	]
+}

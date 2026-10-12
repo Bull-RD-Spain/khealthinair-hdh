@@ -1,0 +1,531 @@
+{
+	"resourceType": "Questionnaire",
+	"id": "whodas-12",
+	"identifier": [
+		{
+			"system": "https://k-healthinair.eu/fhir/questionnaire-codes",
+			"value": "WHODAS12"
+		}
+	],
+    "url": "https://k-healthinair.eu/fhir/Questionnaire/whodas12",
+	"name": "WHODAS12",
+	"title": "World Health Organization Disability Assessment Schedule (12 item version)",
+	"description": "Abbreviated 12-item version of WHODAS 2.0 to assess functioning and disability",
+	"purpose": "A 12-item questionnaire developed by the WHO to assess health and disability across six domains: cognition, mobility, self-care, getting along, life activities, and participation. It provides a comprehensive measure of functioning and disability. Simple scoring: the scores assigned to each of the items – none (0), mild (1) moderate (2), severe (3) and extreme (4) – are summed.",
+	"version": "1.0.0",
+	"status": "active",
+	"date": "2025-01-01T00:00:00+00:00",
+	"subjectType": [
+		"Patient"
+	],
+	"publisher": "K-HEALTHinAIR",
+	"code": [
+		{
+			"system": "http://snomed.info/sct",
+			"code": "1354559009",
+			"display": "World Health Organization Disability Assessment Schedule 2.0 12-item short version (assessment scale)"
+		}
+	],
+	"item": [
+		{
+			"linkId": "whodas_q01",
+			"text": "In the last 30 days, how much difficulty did you have in standing for long periods such as 30 minutes?",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "None"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Extreme/Cannot do"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "whodas_q02",
+			"text": "Taking care of household responsibilities?",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "None"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Extreme/Cannot do"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "whodas_q03",
+			"text": "Learning a new task, for example, learning how to get to a new place?",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "None"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Extreme/Cannot do"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "whodas_q04",
+			"text": "How much of a problem did you have joining in community activities (for example, festivities, religious or other activities) in the same way as anyone else can?",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "None"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Extreme/Cannot do"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "whodas_q05",
+			"text": "How much have you been emotionally affected by your health problems?",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "None"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Extreme/Cannot do"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "whodas_q06",
+			"text": "Concentrating on doing something for ten minutes?",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "None"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Extreme/Cannot do"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "whodas_q07",
+			"text": "Walking a long distance such as a kilometre (or equivalent)?",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "None"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Extreme/Cannot do"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "whodas_q08",
+			"text": "Washing your whole body?",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "None"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Extreme/Cannot do"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "whodas_q09",
+			"text": "Getting dressed?",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "None"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Extreme/Cannot do"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "whodas_q10",
+			"text": "Dealing with people you do not know?",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "None"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Extreme/Cannot do"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "whodas_q11",
+			"text": "Maintaining a friendship?",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "None"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Extreme/Cannot do"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "whodas_q12",
+			"text": "Your day-to-day work/school activities?",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "None"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Extreme/Cannot do"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "whodas_12_score_none",
+			"text": "Simple scoring, count of items with code 1 None",
+			"type": "integer",
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-calculatedExpression",
+					"valueExpression": {
+						"language": "text/fhirpath",
+						"expression": "%resource.item.where(linkId.matches('whodas_q\\d+')).answer.valueCoding.where(code = '1').count()"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "whodas_12_score_mild",
+			"text": "Simple scoring, count of items with code 2 Mild",
+			"type": "integer",
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-calculatedExpression",
+					"valueExpression": {
+						"language": "text/fhirpath",
+						"expression": "%resource.item.where(linkId.matches('whodas_q\\d+')).answer.valueCoding.where(code = '2').count()"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "whodas_12_score_severe",
+			"text": "Simple scoring, count of items with code 4 Severe",
+			"type": "integer",
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-calculatedExpression",
+					"valueExpression": {
+						"language": "text/fhirpath",
+						"expression": "%resource.item.where(linkId.matches('whodas_q\\d+')).answer.valueCoding.where(code = '4').count()"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "whodas_12_score_extreme",
+			"text": "Simple scoring, count of items with code 5 Extreme",
+			"type": "integer",
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-calculatedExpression",
+					"valueExpression": {
+						"language": "text/fhirpath",
+						"expression": "%resource.item.where(linkId.matches('whodas_q\\d+')).answer.valueCoding.where(code = '5').count()"
+					}
+				}
+			]
+		}
+	]
+}

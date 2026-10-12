@@ -1,0 +1,114 @@
+# =============================================================================
+# K-HEALTHinAIR HDH Module (Health Data Hub - CDR) — Docker Compose
+# =============================================================================
+# Adapted for local development on WSL2 + Podman.
+#
+# Original: khealthinair-hdh docker-compose.yml + khealthinair-hdh-cdr.env
+#
+# Changes from original:
+#   - FQDN prefix on public images (docker.io/library/)
+#   - Registry prefix on hdh-cdr image (same as hdh-cdr-api)
+#   - Shared network khealthinair-net (communication with AQDR/DAQSR)
+#   - PostgreSQL port exposed on 5433 (5432 already used by AQDR)
+#   - hdh-cdr port changed to 8090 (8080 could conflict with other services)
+# =============================================================================
+
+services:
+
+  # ---------------------------------------------------------------------------
+  # 1. hdh-cdr-db — PostgreSQL 17.0
+  # ---------------------------------------------------------------------------
+  hdh-cdr-db:
+    container_name: hdh-cdr-db
+    image: docker.io/library/postgres:17.0
+    restart: unless-stopped
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB} --quiet"]
+      interval: 10s
+      retries: 5
+      timeout: 5s
+      start_period: 10s
+    volumes:
+      - hdh-cdr-db-data:/var/lib/postgresql/data
+    networks:
+      - khealthinair-net
+
+  # ---------------------------------------------------------------------------
+  # 2. hdh-cdr — HAPI FHIR Server
+  # ---------------------------------------------------------------------------
+  hdh-cdr:
+    container_name: hdh-cdr
+    image: khealthinair/hdh-cdr:${HDH_CDR_VERSION}
+    build:
+      context: ../../hdh-cdr
+    restart: unless-stopped
+    ports:
+      - "8090:8080"
+    depends_on:
+      hdh-cdr-db:
+        condition: service_healthy
+    environment:
+      LOGGING_MODE: ${CDR_LOGGING_MODE}
+      DATASOURCE_URL: ${DATASOURCE_URL}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      CDR_HAPI_FHIR_SERVER_ADDRESS: ${CDR_HAPI_FHIR_SERVER_ADDRESS}
+    healthcheck:
+      test: ["CMD-SHELL", "curl --fail http://hdh-cdr:8080/hdh-cdr/actuator/health || exit 1"]
+      interval: 60s
+      retries: 5
+      timeout: 10s
+      start_period: 30s
+    networks:
+      - khealthinair-net
+
+  # ---------------------------------------------------------------------------
+  # 3. hdh-cdr-api — CDR API (optional, start with --profile hdh-api)
+  # ---------------------------------------------------------------------------
+  hdh-cdr-api:
+    profiles:
+      - hdh-api
+    container_name: hdh-cdr-api
+    image: khealthinair/hdh-cdr-api:${HDH_CDR_API_VERSION}
+    build:
+      context: ../../hdh-cdr-api
+    restart: unless-stopped
+    ports:
+      - "8091:8081"
+    depends_on:
+      hdh-cdr:
+        condition: service_healthy
+    environment:
+      LOGGING_MODE: ${CDR_LOGGING_MODE}
+      CDR_API_CONTEXTPATH: ${CDR_API_CONTEXTPATH}
+      CDR_HAPI_FHIR_SERVER_ADDRESS: ${CDR_HAPI_FHIR_SERVER_ADDRESS}
+      APIKEY_ADMIN: ${APIKEY_ADMIN}
+      APIKEY_PILOT: ${APIKEY_PILOT}
+    healthcheck:
+      test: ["CMD-SHELL", "curl --fail http://hdh-cdr-api:8081/health/ready || exit 1"]
+      interval: 60s
+      retries: 5
+      timeout: 10s
+      start_period: 30s
+    networks:
+      - khealthinair-net
+
+# =============================================================================
+# Volumes
+# =============================================================================
+volumes:
+  hdh-cdr-db-data:
+
+# =============================================================================
+# Networks — shared with AQDR and DAQSR modules
+# =============================================================================
+networks:
+  khealthinair-net:
+    external: false
+    name: khealthinair-net

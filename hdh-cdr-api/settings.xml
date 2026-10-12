@@ -1,0 +1,16 @@
+<!-- settings.xml -->
+<settings>
+  <!-- Enable and configure only if your network requires an HTTP proxy -->
+  <!--
+  <proxies>
+    <proxy>
+      <id>proxy</id>
+      <active>true</active>
+      <protocol>http</protocol>
+      <host>PROXY_HOST</host>
+      <port>PROXY_PORT</port>
+      <nonProxyHosts>localhost|127.0.0.1</nonProxyHosts>
+    </proxy>
+  </proxies>
+  -->
+</settings>

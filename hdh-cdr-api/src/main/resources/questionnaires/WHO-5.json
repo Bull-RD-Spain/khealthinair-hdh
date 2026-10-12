@@ -1,0 +1,288 @@
+{
+	"resourceType": "Questionnaire",
+	"id": "who-5",
+	"identifier": [
+		{
+			"system": "https://k-healthinair.eu/fhir/questionnaire-codes",
+			"value": "WHO5"
+		}
+	],
+	"url": "https://k-healthinair.eu/fhir/Questionnaire/who5",
+	"name": "WHO5",
+	"title": "The World Health Organization-Five Well-Being Index (WHO-5)",
+	"description": "The WHO-5 is a short questionnaire measuring subjective well-being over the last two weeks",
+	"purpose": "A 5-item questionnaire developed by the World Health Organization to assess subjective well-being and mental health. It evaluates mood, energy levels, and overall sense of well-being over the past two weeks.",
+	"version": "1.0.0",
+	"status": "active",
+	"date": "2025-01-01T00:00:00+00:00",
+	"subjectType": [
+		"Patient"
+	],
+	"publisher": "K-HEALTHinAIR",
+	"code": [
+		{
+			"system": "http://snomed.info/sct",
+			"code": "1144752009",
+			"display": "5-item World Health Organization Well-being Index questionnaire"
+		}
+	],
+	"item": [
+		{
+			"linkId": "who_5_q01",
+			"text": "I have felt cheerful and in good spirits.",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "At no time"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Some of the time"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Less than half of the time"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "More than half of the time"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Most of the time"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "All of the time"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "who_5_q02",
+			"text": "I have felt calm and relaxed.",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "At no time"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Some of the time"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Less than half of the time"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "More than half of the time"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Most of the time"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "All of the time"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "who_5_q03",
+			"text": "I have felt active and vigorous.",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "At no time"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Some of the time"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Less than half of the time"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "More than half of the time"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Most of the time"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "All of the time"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "who_5_q04",
+			"text": "I woke up feeling fresh and rested.",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "At no time"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Some of the time"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Less than half of the time"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "More than half of the time"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Most of the time"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "All of the time"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "who_5_q05",
+			"text": "My daily life has been filled with things that interest me.",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "At no time"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Some of the time"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Less than half of the time"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "More than half of the time"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Most of the time"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "All of the time"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "who_5_score_sum",
+			"text": "The total raw score, ranging from 0 to 25",
+			"type": "integer",
+			"code": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "1144665009",
+					"display": "5-item World Health Organization Well-being Index value (observable entity)"
+				}
+			],
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-calculatedExpression",
+					"valueExpression": {
+						"language": "text/fhirpath",
+						"expression": "item.where(linkId='who_5_q01').answer.value + item.where(linkId='who_5_q02').answer.value + item.where(linkId='who_5_q03').answer.value + item.where(linkId='who_5_q04').answer.value + item.where(linkId='who_5_q05').answer.value"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "who_5_score",
+			"text": "The total raw score, ranging from 0 to 25, is multiplied by 4 to give the final score (0-100)",
+			"type": "integer",
+			"code": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "1144665009",
+					"display": "5-item World Health Organization Well-being Index value (observable entity)"
+				}
+			],
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-calculatedExpression",
+					"valueExpression": {
+						"language": "text/fhirpath",
+						"expression": "(item.where(linkId='who_5_q01').answer.value + item.where(linkId='who_5_q02').answer.value + item.where(linkId='who_5_q03').answer.value + item.where(linkId='who_5_q04').answer.value + item.where(linkId='who_5_q05').answer.value)*4"
+					}
+				}
+			]
+		}
+	]
+}

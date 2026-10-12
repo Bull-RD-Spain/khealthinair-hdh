@@ -1,0 +1,453 @@
+{
+	"resourceType": "Questionnaire",
+	"id": "cat",
+	"identifier": [
+		{
+			"system": "https://k-healthinair.eu/fhir/questionnaire-codes",
+			"value": "CAT"
+		}
+	],
+	"url": "https://k-healthinair.eu/fhir/Questionnaire/cat",
+	"name": "CAT",
+	"title": "COPD Assessment Test (CAT)",
+	"description": "The COPD Assessment Test (CAT) is a patient-completed instrument that assesses and quantifies the impact of COPD symptoms on a patients' overall health.",
+	"purpose": "A simple 8-item questionnaire used to assess the health status and symptom burden in individuals with chronic obstructive pulmonary disease (COPD). It evaluates cough, phlegm, chest tightness, breathlessness, and activity limitations. Scores range from 0 to 40, with higher scores indicating more severe symptoms.",
+	"version": "1.0.0",
+	"status": "active",
+	"date": "2025-01-01T00:00:00+00:00",
+	"subjectType": [
+		"Patient"
+	],
+	"publisher": "K-HEALTHinAIR",
+	"code": [
+		{
+			"system": "http://snomed.info/sct",
+			"code": "57671000052108",
+			"display": "Chronic Obstructive Pulmonary Disease Assessment Test scale (assessment scale)"
+		}
+	],
+	"item": [
+		{
+			"linkId": "cat_1",
+			"text": "Cough",
+			"type": "coding",
+			"code": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "49727002",
+					"display": "Cough"
+				}
+			],
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "I never cough"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Rarely cough"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Occasionally cough"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Sometimes cough"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Often cough"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "I cough all the time"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "cat_2",
+			"text": "Sputum production",
+			"type": "coding",
+			"code": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "11833005",
+					"display": "Sputum production"
+				}
+			],
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "No phlegm at all"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Very little phlegm"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Occasional phlegm"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate phlegm"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "A lot of phlegm"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "My chest is completely full of phlegm"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "cat_3",
+			"text": "Chest tightness",
+			"type": "coding",
+			"code": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "422587007",
+					"display": "Chest tightness"
+				}
+			],
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "No chest tightness"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Very slight tightness"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Slight tightness"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate tightness"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Quite a lot of tightness"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "My chest feels very tight"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "cat_4",
+			"text": "Dyspnea",
+			"type": "coding",
+			"code": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "267036007",
+					"display": "Dyspnea"
+				}
+			],
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "Not breathless"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Slightly breathless"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mildly breathless"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderately breathless"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severely breathless"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Very breathless"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "cat_5",
+			"text": "Physical activity decreased",
+			"type": "coding",
+			"code": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "248234002",
+					"display": "Physical activity decreased"
+				}
+			],
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "Not limited"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Slightly limited"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Occasionally limited"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderately limited"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Mostly limited"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Very limited"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "cat_6",
+			"text": "Confidence",
+			"type": "coding",
+			"code": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "10601009",
+					"display": "Confidence"
+				}
+			],
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "Very confident"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Fairly confident"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Somewhat confident"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Not very confident"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Hardly confident"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Not at all confident"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "cat_7",
+			"text": "Sleep quality",
+			"type": "coding",
+			"code": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "258160006",
+					"display": "Sleep quality"
+				}
+			],
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "Sleep soundly"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Slightly disturbed sleep"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Occasionally disturbed sleep"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Frequently disturbed sleep"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Mostly poor sleep"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Cannot sleep because of my lung condition"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "cat_8",
+			"text": "Energy level",
+			"type": "coding",
+			"code": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "364406002",
+					"display": "Energy level"
+				}
+			],
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "Lots of energy"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Quite a bit of energy"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Some energy"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Low energy"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Very little energy"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "No energy at all"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "cat_score",
+			"text": "CAT score. 0-9: Low, 10-20: Medium, 21-30: High, 31-40: Very High",
+			"type": "integer",
+			"readOnly": true,
+			"code": [
+					{
+						"system": "http://loinc.org",
+						"code": "71933-2",
+						"display": "COPD Assessment Test (CAT) total score"
+					}
+				],
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-calculatedExpression",
+					"valueExpression": {
+						"language": "text/fhirpath",
+						"expression": "item.where(linkId='cat_1').answer.value + item.where(linkId='cat_2').answer.value + item.where(linkId='cat_3').answer.value + item.where(linkId='cat_4').answer.value + item.where(linkId='cat_5').answer.value + item.where(linkId='cat_6').answer.value + item.where(linkId='cat_7').answer.value + item.where(linkId='cat_8').answer.value"
+					}
+				}
+			]
+		}
+	]
+}

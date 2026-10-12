@@ -1,0 +1,883 @@
+{
+	"resourceType": "Questionnaire",
+	"id": "observational-ipchem",
+	"identifier": [
+		{
+			"system": "https://k-healthinair.eu/fhir/questionnaire-codes",
+			"value": "OBSERVATIONALIPCHEM"
+		}
+	],
+	"url": "https://k-healthinair.eu/fhir/Questionnaire/observationalipchem",
+	"name": "OBSERVATIONALIPCHEM",
+	"title": "Observational IPCHEM checklist",
+	"description": "Observational IPCHEM checklist",
+	"purpose": "A tool used for the observational assessment of inhaler technique in patients with chronic obstructive pulmonary disease (COPD) or asthma. It evaluates whether patients use their inhalers correctly, which is crucial for effective treatment.",
+	"version": "1.0.0",
+	"status": "active",
+	"date": "2025-01-01T00:00:00+00:00",
+	"subjectType": [
+		"Patient"
+	],
+	"publisher": "K-HEALTHinAIR",
+	"item": [
+		{
+			"linkId": "observacional_residencial",
+			"text": "Residencial characteristics",
+			"type": "group",
+			"item": [
+				{
+					"linkId": "type_of_home",
+					"text": "Type of home",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "House"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Flat"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "type_of_apartment",
+					"text": "Type of apartment",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Bottom floor"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Mezzanine floor"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "1º"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "2º"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "3º"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "4º"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "7",
+								"display": "5º"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "8",
+								"display": "6º"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "9",
+								"display": "Upper floor"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "elevator",
+					"text": "Does it have an elevator?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "0",
+								"display": "No"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "dust",
+					"text": "Is there visible dust?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "0",
+								"display": "No"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "remaining_material",
+					"text": "Existint appliances/reamaining material",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Printer"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Hairdryer"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "Air fresheners"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "Candles"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "Incesse sticks"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "Oil lamp"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "7",
+								"display": "Other"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "air_dct_element",
+					"text": "Main building material",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Brick"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Concrete"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "Glass"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "Wood"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "Other"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "air_dct_element2",
+					"text": "Type of insulation",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Glass fibre"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Mineral fibres"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "Polyurethane"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "Sawdust"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "Styrofoam"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "Other"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "air_dct_element3",
+					"text": "Flooring type",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Marble"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Carpet"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "Linoleum"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "Stone"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "Vinyl"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "Wood"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "7",
+								"display": "Parquet"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "8",
+								"display": "Other"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "air_dct_element4",
+					"text": "Wall type",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Ceiling tiles"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Concrete"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "Paint"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "Plasterboard"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "Wall paper"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "Wood panels"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "7",
+								"display": "Other"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "air_dct_element5",
+					"text": "Ceiling type",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Ceiling tiles"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Concrete"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "Paint"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "Plasterboards"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "Wood panels"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "Other"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "air_dct_element6",
+					"text": "Presence of objects in microenvironment",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Electronics (< 5)"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Electronics (5-10)"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "Electronics (> 10)"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "Air conditioning"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "Air freshener"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "Personal care products"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "7",
+								"display": "Plastic toys"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "8",
+								"display": "Wooden toys"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "9",
+								"display": "Other"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"linkId": "observacional_desc_sampling-g1",
+			"text": "Description of sampling microenvironment",
+			"type": "group",
+			"item": [
+				{
+					"linkId": "room_with_window_on_street",
+					"text": "room with window on street",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "0",
+								"display": "No"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "number_of_times_per_day_the_windows_are_opened",
+					"text": "Number of times per day the windows are opened",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "0",
+								"display": "0"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "1"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "2"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "Irregular"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "traffic_intensity_around_sampling_site",
+					"text": "Traffic intensity around sampling site",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Low"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Medium"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "High"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "sampling_site_dimension_m3",
+					"text": "Sampling site dimension (m3)",
+					"type": "integer",
+					"required": true
+				},
+				{
+					"linkId": "dwelling_humid",
+					"text": "Signs of moisture in the investigated sampling site",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "0",
+								"display": "No"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"linkId": "observacional_surroundings",
+			"text": "Surroundings",
+			"type": "group",
+			"item": [
+				{
+					"linkId": "construction",
+					"text": "Is construction taking place?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "No"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Yes, the building itself is undergoing renovation, explanation."
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "Yes, within a radius of 100 meters, explanation."
+							}
+						}
+					]
+				},
+				{
+					"linkId": "green_area",
+					"text": "What does the area around the house look like? - Green area, explanation.",
+					"type": "text",
+					"required": false
+				},
+				{
+					"linkId": "traffic",
+					"text": "What does the area around the house look like? - Lots of traffic/ big highway, explanation",
+					"type": "text",
+					"required": false
+				}
+			]
+		},
+		{
+			"linkId": "observacional_pets",
+			"text": "Pets",
+			"type": "group",
+			"item": [
+				{
+					"linkId": "pets",
+					"text": "Is construction taking place?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "0",
+								"display": "Are there pets present in the house"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "typepet",
+					"text": "What type of pet? And how many? (Please, specify)",
+					"type": "text",
+					"required": false
+				}
+			]
+		},
+		{
+			"linkId": "observacional_cooking",
+			"text": "Cooking",
+			"type": "group",
+			"item": [
+				{
+					"linkId": "typeofcooker",
+					"text": "Question extracted SINPHONIE questionnaire - What type of cooker is used in the kitchen?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Only electric"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Gas cooker (even if combined with electric oven)"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "Coal or wood fired oven"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "extractor",
+					"text": "Do you have a kitchen extractor fan?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "0",
+								"display": "No"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"linkId": "observacional_heating_coolingcooking",
+			"text": "Heating and cooling",
+			"type": "group",
+			"item": [
+				{
+					"linkId": "gasboiler_bath",
+					"text": "Heating type- Question extracted SINPHONIE questionnaire - Is there a gas-boiler in the bath-room?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "No"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Yes, and the combustion products are led out to the outdoor air"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "Yes, but the combustion products are not led out to the outdoor air"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "gasheater_dwelling",
+					"text": "Heating type- Question extracted SINPHONIE questionnaire - Is there a gas-heater in the dwelling?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "No"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Yes, and the combustion products are led out to the outdoor air"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "Yes, but the combustion products are not led out to the outdoor air"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "type_of_heating_system",
+					"text": "Tipo de sistema de calefacción",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Underfloor heating"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Gas heater(s)"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "Open fireplace/wood stove"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "Other (specify)"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "heating_system_other",
+					"text": "If other, specify",
+					"type": "text",
+					"required": false
+				},
+				{
+					"linkId": "cooling",
+					"text": "Do you have air conditioner or other mean of cooling?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "0",
+								"display": "No"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Air conditioner"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Ventilator"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "Other"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"linkId": "observacional_cleaning",
+			"text": "Cleaning",
+			"type": "group",
+			"item": [
+				{
+					"linkId": "general_cleaning",
+					"text": "How often is general cleaning done in the house?",
+					"type": "text",
+					"required": false
+				},
+				{
+					"linkId": "cleaning_products",
+					"text": "What cleaning products are used most frequently?",
+					"type": "text",
+					"required": false
+				},
+				{
+					"linkId": "cleaning_methods",
+					"text": "Are specific cleaning methods used, such as vacuum cleaners, mops, or cloths?",
+					"type": "text",
+					"required": false
+				},
+				{
+					"linkId": "allergic_cleaning_product",
+					"text": "Have you experienced an allergic reaction to any cleaning product?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "0",
+								"display": "No"
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<configuration>
+	<property name="LOG_DIR" value="${LOGGING_FOLDER:-logs/}" />
+	<!-- <property name="LOG_FILE" -->
+	<!-- value="${LOG_DIR}hdh-cdr-api.log" /> -->
+
+	<logger name="org.apache" level="error" />
+	<logger name="httpclient" level="error" />
+	<logger name="ca.uhn.fhir.context" level="error" />
+	<logger name="ca.uhn.fhir.rest.client.apache" level="error" />
+	<logger name="ca.uhn.fhir.util.XmlUtil.createOutputFactory"
+		level="error" />
+	<logger
+		name="org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor"
+		level="error" />
+	<logger
+		name="org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor"
+		level="error" />
+	<logger
+		name="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"
+		level="error" />
+	<logger name="org.springframework.web.servlet.DispatcherServlet"
+		level="info" />
+	<logger
+		name="org.springframework.security.web.context.HttpSessionSecurityContextRepository"
+		level="info" />
+	<logger
+		name="org.springframework.security.web.authentication.AnonymousAuthenticationFilter"
+		level="info" />
+	<logger
+		name="org.springframework.security.web.context.SecurityContextPersistenceFilter"
+		level="info" />
+	<logger name="org.springdoc.api.AbstractOpenApiResource"
+		level="info" />
+	<logger
+		name="org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping"
+		level="info" />
+	<logger
+		name="io.swagger.v3.core.converter.ModelConverterContextImpl"
+		level="info" />
+	<logger
+		name="org.springframework.beans.factory.support.DefaultListableBeanFactory"
+		level="info" />
+	<logger name="org.springframework.security.web.FilterChainProxy"
+		level="info" />
+
+	<appender name="STDOUT"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>
+				<![CDATA[%d{dd/MM/yyyy HH:mm:ss.SSS} %-5level hdh-cdr-api %logger{36} - %msg%n]]>
+			</pattern>
+		</encoder>
+	</appender>
+
+	<!-- <appender name="SAVE-TO-FILE" -->
+	<!-- class="ch.qos.logback.core.rolling.RollingFileAppender"> -->
+	<!-- <file>${LOG_FILE}</file> -->
+	<!-- <encoder -->
+	<!-- class="ch.qos.logback.classic.encoder.PatternLayoutEncoder"> -->
+	<!-- <pattern> -->
+	<!-- <![CDATA[%d{dd/MM/yyyy HH:mm:ss.SSS} %-5level hdh-cdr-api %logger{36} -
+		%msg%n]]> -->
+	<!-- </pattern> -->
+	<!-- </encoder> -->
+	<!-- <rollingPolicy -->
+	<!-- class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy"> -->
+	<!-- <maxFileSize>100MB</maxFileSize> -->
+	<!-- <fileNamePattern> -->
+	<!-- ${LOG_DIR}archived/${LOG_FILE}_%d{dd-MM-yyyy}_%i.log -->
+	<!-- </fileNamePattern> -->
+	<!-- <maxHistory>10</maxHistory> -->
+	<!-- <totalSizeCap>100MB</totalSizeCap> -->
+	<!-- </rollingPolicy> -->
+	<!-- </appender> -->
+
+	<springProfile name="dev">
+		<root level="debug">
+			<appender-ref ref="STDOUT" />
+			<!-- <appender-ref ref="SAVE-TO-FILE" /> -->
+		</root>
+	</springProfile>
+
+	<springProfile name="prod">
+		<root level="info">
+			<!-- <appender-ref ref="SAVE-TO-FILE" /> -->
+		</root>
+	</springProfile>
+
+</configuration>

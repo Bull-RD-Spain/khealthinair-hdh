@@ -1,0 +1,490 @@
+{
+	"resourceType": "Questionnaire",
+	"id": "promis-global-health-10",
+	"identifier": [
+		{
+			"system": "https://k-healthinair.eu/fhir/questionnaire-codes",
+			"value": "PROMISGH10"
+		}
+	],
+	"url": "http://example.org/fhir/Questionnaire/promisgh10",
+	"name": "PROMISGH10",
+	"title": "PROMIS Global Health 10",
+	"description": "The PROMIS Global-10 assesses physical, mental, and social health.",
+	"purpose": "A 10-item questionnaire developed by the NIH to assess general health status across physical, mental, and social health domains. It provides a global measure of health that can be used in diverse populations and settings.​",
+	"version": "1.0.0",
+	"status": "active",
+	"date": "2025-01-01T00:00:00+00:00",
+	"subjectType": [
+		"Patient"
+	],
+	"code": [
+		{
+			"system": "http://loinc.org",
+			"code": "85524-7",
+			"display": "PROMIS short form - global - version 1.2"
+		}
+	],
+	"item": [
+		{
+			"linkId": "promis_10_q01",
+			"text": "In general, would you say your health is:",
+			"type": "coding",
+			"code": [
+				{
+					"system": "http://loinc.org",
+					"code": "61577-3",
+					"display": "In general, would you say your health is:"
+				}
+			],
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Excellent"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Very good"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Good"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Fair"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Poor"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "promis_10_q02",
+			"text": "In general, would you say your quality of life is:",
+			"type": "coding",
+			"code": [
+				{
+					"system": "http://loinc.org",
+					"code": "61578-1",
+					"display": "In general, would you say your quality of life is:"
+				}
+			],
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Excellent"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Very good"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Good"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Fair"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Poor"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "promis_10_q03",
+			"text": "In general, how would you rate your physical health?",
+			"type": "coding",
+			"code": [
+				{
+					"system": "http://loinc.org",
+					"code": "61579-9",
+					"display": "In general, how would you rate your physical health?"
+				}
+			],
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Excellent"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Very good"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Good"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Fair"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Poor"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "promis_10_q04",
+			"text": "In general, how would you rate your mental health, including your mood and your ability to think?",
+			"type": "coding",
+			"code": [
+				{
+					"system": "http://loinc.org",
+					"code": "61580-7",
+					"display": "In general, how would you rate your mental health, including your mood"
+				}
+			],
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Excellent"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Very good"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Good"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Fair"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Poor"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "promis_10_q05",
+			"text": "In general, how would you rate your satisfaction with your social activities and relationships?",
+			"type": "coding",
+			"code": [
+				{
+					"system": "http://loinc.org",
+					"code": "61581-5",
+					"display": "In general, how would you rate your satisfaction with your social activities and relationships?"
+				}
+			],
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Excellent"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Very good"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Good"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Fair"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Poor"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "promis_10_q06",
+			"text": "To what extent are you able to carry out your everyday physical activities such as walking, climbing stairs, carrying groceries, or moving a chair?",
+			"type": "coding",
+			"code": [
+				{
+					"system": "http://loinc.org",
+					"code": "61582-3",
+					"display": "To what extent are you able to carry out your everyday physical activities such as walking, climbing stairs, carrying groceries, or moving a chair?"
+				}
+			],
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Completely"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Mostly"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderately"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "A little"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Not at all"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "promis_10_07r",
+			"text": "In the past 7 days, how would you rate your pain on average?",
+			"type": "integer",
+			"code": [
+				{
+					"system": "http://loinc.org",
+					"code": "61583-1",
+					"display": "In the past 7 days - How would you rate your pain on average?"
+				}
+			],
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-minValue",
+					"valueInteger": 0
+				},
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxValue",
+					"valueInteger": 10
+				}
+			]
+		},
+		{
+			"linkId": "promis_10_08r",
+			"text": "In the past 7 days, how would you rate your fatigue on average?",
+			"type": "coding",
+			"code": [
+				{
+					"system": "http://loinc.org",
+					"code": "61584-9",
+					"display": "In the past 7 days - How would you rate your fatigue on average?"
+				}
+			],
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "None"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Very severe"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "promis_10_q09r",
+			"text": "In general, how would you rate your satisfaction with your social activities and relationships?",
+			"type": "coding",
+			"code": [
+				{
+					"system": "http://loinc.org",
+					"code": "61581-5",
+					"display": "In general, how would you rate your satisfaction with your social activities and relationships?"
+				}
+			],
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Excellent"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Very good"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Good"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Fair"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Poor"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "promis_10_q10r",
+			"text": "In the past 7 days, how often have you been bothered by emotional problems such as feeling anxious, depressed or irritable?",
+			"type": "coding",
+			"code": [
+				{
+					"system": "http://loinc.org",
+					"code": "61586-4",
+					"display": "In the past 7 days - How often have you been bothered by emotional problems such as feeling anxious, depressed or irritable?"
+				}
+			],
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Never"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Rarely"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Sometimes"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Often"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Always"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "promis_score1_ph",
+			"text": "PROMIS PH Score (Global Physical Health). This score is obtained from answers to some questions. Valid range: integer 4 to 20.",
+			"type": "integer",
+			"code": [
+				{
+					"system": "http://loinc.org",
+					"code": "71972-4",
+					"display": "PROMIS-10 Global Health, GPH, raw score"
+				}
+			],
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-calculatedExpression",
+					"valueExpression": {
+						"language": "text/fhirpath",
+						"expression": "item.where(linkId='promis_10_q03').answer.value + item.where(linkId='promis_10_q07').answer.value + item.where(linkId='promis_10_q09r').answer.value + item.where(linkId='promis_10_08r').answer.value"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "promis_score1_mh",
+			"text": "PROMIS MH Score (Global Mental Health). This score is obtained from answers to some questions. Valid range: integer 4 to 20.",
+			"type": "integer",
+			"code": [
+				{
+					"system": "http://loinc.org",
+					"code": "71970-8",
+					"display": "PROMIS-10 Global Health, GMH raw score"
+				}
+			],
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-calculatedExpression",
+					"valueExpression": {
+						"language": "text/fhirpath",
+						"expression": "item.where(linkId='promis_10_q02').answer.value + item.where(linkId='promis_10_q04').answer.value + item.where(linkId='promis_10_q5').answer.value + item.where(linkId='promis_10_q10r').answer.value"
+					}
+				}
+			]
+		}
+	]
+}

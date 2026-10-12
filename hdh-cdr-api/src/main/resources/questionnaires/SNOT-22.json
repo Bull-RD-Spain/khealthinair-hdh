@@ -1,0 +1,1129 @@
+{
+	"resourceType": "Questionnaire",
+	"id": "snot-22",
+	"identifier": [
+		{
+			"system": "https://k-healthinair.eu/fhir/questionnaire-codes",
+			"value": "SNOT22"
+		}
+	],
+	"url": "https://k-healthinair.eu/fhir/Questionnaire/snot22",
+	"name": "SNOT22",
+	"title": "Sino-Nasal Outcome Test (SNOT-22)",
+	"description": "The SNOT-22 questionnaire evaluates the impact of chronic rhinosinusitis on a patient\u2019s quality of life",
+	"purpose": "Assesses the impact of sinus and nasal symptoms on quality of life.",
+	"version": "1.0.0",
+	"status": "active",
+	"date": "2025-01-01T00:00:00+00:00",
+	"subjectType": [
+		"Patient"
+	],
+	"publisher": "K-HEALTHinAIR",
+	"item": [
+		{
+			"linkId": "snotinstructions",
+			"text": "Over the past two weeks, how much did the following problems bother you?",
+			"type": "display"
+		},
+		{
+			"linkId": "snot1",
+			"text": "Need to blow nose",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "No problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Very mild problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild or slight problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "As bad as it can be"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "snot2",
+			"text": "Sneezing",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "No problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Very mild problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild or slight problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "As bad as it can be"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "snot3",
+			"text": "Runny nose",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "No problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Very mild problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild or slight problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "As bad as it can be"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "snot4",
+			"text": "Nasal obstruction",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "No problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Very mild problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild or slight problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "As bad as it can be"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "snot5",
+			"text": "Loss of smell or taste",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "No problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Very mild problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild or slight problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "As bad as it can be"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "snot6",
+			"text": "Cough",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "No problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Very mild problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild or slight problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "As bad as it can be"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "snot7",
+			"text": "Post-nasal discharge",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "No problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Very mild problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild or slight problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "As bad as it can be"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "snot8",
+			"text": "Thick nasal discharge",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "No problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Very mild problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild or slight problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "As bad as it can be"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "snot9",
+			"text": "Ear fullness",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "No problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Very mild problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild or slight problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "As bad as it can be"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "snot10",
+			"text": "Dizziness",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "No problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Very mild problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild or slight problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "As bad as it can be"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "snot11",
+			"text": "Ear pain",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "No problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Very mild problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild or slight problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "As bad as it can be"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "snot12",
+			"text": "Facial pain/pressure",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "No problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Very mild problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild or slight problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "As bad as it can be"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "snot13",
+			"text": "Fatigue",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "No problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Very mild problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild or slight problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "As bad as it can be"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "snot14",
+			"text": "Fever",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "No problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Very mild problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild or slight problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "As bad as it can be"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "snot15",
+			"text": "Feeling of pressure in the face",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "No problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Very mild problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild or slight problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "As bad as it can be"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "snot16",
+			"text": "Difficulty breathing through nose",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "No problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Very mild problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild or slight problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "As bad as it can be"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "snot17",
+			"text": "Headache",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "No problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Very mild problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild or slight problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "As bad as it can be"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "snot18",
+			"text": "Loss of concentration",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "No problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Very mild problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild or slight problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "As bad as it can be"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "snot19",
+			"text": "Nasal itching",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "No problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Very mild problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild or slight problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "As bad as it can be"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "snot20",
+			"text": "Other sinus problems",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "No problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Very mild problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild or slight problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "As bad as it can be"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "snot21",
+			"text": "Sleep problems",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "No problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Very mild problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild or slight problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "As bad as it can be"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "snot22",
+			"text": "Trouble with daily activities",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "No problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Very mild problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Mild or slight problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Moderate problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Severe problem"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "As bad as it can be"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "snot23",
+			"text": "Please mark the most important items affecting your health (maximum of 5 items)",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Need to blow nose"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Nasal congestion/obstruction"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Sneezing"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Continuous nasal discharge"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Cough"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "6",
+						"display": "Feeling of mucus draining down the back of the throat"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "7",
+						"display": "Thick nasal discharge"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "8",
+						"display": "Feeling of blocked ear"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "9",
+						"display": "Dizziness"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "10",
+						"display": "Ear pain"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "11",
+						"display": "Facial pain/pressure"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "12",
+						"display": "Changes in taste/smell"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "13",
+						"display": "Difficulty falling asleep"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "14",
+						"display": "Waking up during the night"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "15",
+						"display": "Poor sleep quality"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "16",
+						"display": "Waking up feeling tired"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "17",
+						"display": "Fatigue or tiredness"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "18",
+						"display": "Reduced performance/productivity"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "19",
+						"display": "Reduced concentration"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "20",
+						"display": "Frustrated/restless/irritable"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "21",
+						"display": "Sad"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "22",
+						"display": "Embarrassed"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "snot_score",
+			"text": "SNOT score",
+			"type": "integer",
+			"readOnly": true,
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-calculatedExpression",
+					"valueExpression": {
+						"language": "text/fhirpath",
+						"expression": "item.where(linkId='snot1').answer.value + item.where(linkId='snot2').answer.value + item.where(linkId='snot3').answer.value + item.where(linkId='snot4').answer.value + item.where(linkId='snot5').answer.value + item.where(linkId='snot6').answer.value + item.where(linkId='snot7').answer.value + item.where(linkId='snot8').answer.value + item.where(linkId='snot9').answer.value + item.where(linkId='snot10').answer.value + item.where(linkId='snot11').answer.value + item.where(linkId='snot12').answer.value + item.where(linkId='snot13').answer.value + item.where(linkId='snot14').answer.value + item.where(linkId='snot15').answer.value + item.where(linkId='snot16').answer.value + item.where(linkId='snot17').answer.value + item.where(linkId='snot18').answer.value + item.where(linkId='snot19').answer.value + item.where(linkId='snot20').answer.value + item.where(linkId='snot21').answer.value + item.where(linkId='snot22').answer.value"
+					}
+				}
+			]
+		}
+	]
+}

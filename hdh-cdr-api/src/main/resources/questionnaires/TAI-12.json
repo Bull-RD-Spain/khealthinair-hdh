@@ -1,0 +1,499 @@
+{
+	"resourceType": "Questionnaire",
+	"id": "tai-12",
+	"identifier": [
+		{
+			"system": "https://k-healthinair.eu/fhir/questionnaire-codes",
+			"value": "TAI12"
+		}
+	],
+	"url": "https://k-healthinair.eu/fhir/Questionnaire/tai12",
+	"name": "TAI12",
+	"title": "Test of Adherence to Inhalers 12 (TAI-12)",
+	"description": "TAI-12 questionnaire to evaluate adherence to inhaled medications",
+	"purpose": "TAI-12 is a validated questionnaire specifically designed to evaluate adherence to inhaled medications in patients with asthma or COPD",
+	"version": "1.0.0",
+	"status": "active",
+	"date": "2025-01-01T00:00:00+00:00",
+	"subjectType": [
+		"Patient"
+	],
+	"publisher": "K-HEALTHinAIR",
+	"item": [
+		{
+			"linkId": "tai1",
+			"text": "Do you sometimes forget to take your inhalers?",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Always"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Very often"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Sometimes"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Rarely"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Never"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "tai2",
+			"text": "Do you take your inhaler doses at the correct times each day?",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Always"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Very often"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Sometimes"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Rarely"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Never"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "tai3",
+			"text": "Do you skip doses when you feel better?",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Always"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Very often"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Sometimes"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Rarely"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Never"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "tai4",
+			"text": "Do you stop taking your inhalers when you feel worse?",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Always"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Very often"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Sometimes"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Rarely"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Never"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "tai5",
+			"text": "Do you use your inhaler even if you are not experiencing symptoms?",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Always"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Very often"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Sometimes"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Rarely"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Never"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "tai6",
+			"text": "Do you know the prescribed doses for each inhaler?",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Always"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Very often"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Sometimes"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Rarely"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Never"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "tai7",
+			"text": "Do you know how many inhaler puffs to take at each dose?",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Always"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Very often"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Sometimes"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Rarely"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Never"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "tai8",
+			"text": "Have you run out of medication because you forgot to request a refill?",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Always"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Very often"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Sometimes"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Rarely"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Never"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "tai9",
+			"text": "Have you taken less inhaler medication than prescribed to make it last longer?",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Always"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Very often"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Sometimes"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Rarely"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Never"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "tai10",
+			"text": "Do you take all prescribed inhalers each day?",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Always"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Very often"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Sometimes"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Rarely"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Never"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "tai_score",
+			"text": "CAT score non-compliance (auto-calculated from items 1–10)",
+			"type": "integer",
+			"readOnly": true,
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-calculatedExpression",
+					"valueExpression": {
+						"language": "text/fhirpath",
+						"expression": "item.where(linkId='tai_1').answer.value + item.where(linkId='tai_2').answer.value + item.where(linkId='tai_3').answer.value + item.where(linkId='tai_4').answer.value + item.where(linkId='tai_5').answer.value + item.where(linkId='tai_6').answer.value + item.where(linkId='tai_7').answer.value + item.where(linkId='tai_8').answer.value + item.where(linkId='tai_9').answer.value + item.where(linkId='tai_10').answer.value"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "tai11_info",
+			"text": "A healthcare professional responsible for the patient must answer the following two questions according to the data that appears in the patient’s medical record (question 11) and after confirming their inhalation technique (question 12).",
+			"type": "display"
+		},
+		{
+			"linkId": "tai11",
+			"text": "Does the patient know or remember the regimen (dose and frequency) that they were prescribed?",
+			"type": "coding",
+			"required": false,
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "No"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Yes"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "tai12",
+			"text": "The patient's inhalation technique for the device",
+			"type": "coding",
+			"required": false,
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Has critical errors"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Has no critical errors or is correct"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "tai_score1",
+			"text": "SCORE ADHERENCE - Items 1 to 5 assess ‘sporadic’ non-compliance (score of 5 to 25)",
+			"type": "integer",
+			"readOnly": true,
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-calculatedExpression",
+					"valueExpression": {
+						"language": "text/fhirpath",
+						"expression": "item.where(linkId='tai1').answer.value + item.where(linkId='tai2').answer.value + item.where(linkId='tai3').answer.value + item.where(linkId='tai4').answer.value + item.where(linkId='tai5').answer.value"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "tai_score2",
+			"text": "SCORE ADHERENCE - Items 6 to 10 assess ‘deliberate’ non-compliance (score of 5 to 25)",
+			"type": "integer",
+			"readOnly": true,
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-calculatedExpression",
+					"valueExpression": {
+						"language": "text/fhirpath",
+						"expression": "item.where(linkId='tai6').answer.value + item.where(linkId='tai7').answer.value + item.where(linkId='tai8').answer.value + item.where(linkId='tai9').answer.value + item.where(linkId='tai10').answer.value"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "tai_score3",
+			"text": "SCORE ADHERENCE - Items 11 to 12 assess ‘unconscious’ non-compliance (score of 2 to 4)",
+			"type": "integer",
+			"readOnly": true,
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-calculatedExpression",
+					"valueExpression": {
+						"language": "text/fhirpath",
+						"expression": "item.where(linkId='tai11').answer.value + item.where(linkId='tai12').answer.value"
+					}
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,90 @@
+{
+	"resourceType": "Questionnaire",
+	"id": "mmrc",
+	"identifier": [
+		{
+			"system": "https://k-healthinair.eu/fhir/questionnaire-codes",
+			"value": "MMRC"
+		}
+	],
+	"url": "https://k-healthinair.eu/fhir/Questionnaire/mmrc",
+	"name": "MMRC",
+	"title": "mMRC (Modified Medical Research Council) Dyspnea Scale",
+	"description": "Stratifies severity of dyspnea in respiratory diseases, particularly COPD. Walking should be assessed on level ground",
+	"purpose": "A 5-point scale used to assess the degree of breathlessness in individuals with respiratory conditions. It ranges from 0 (not troubled by breathlessness except on strenuous exercise) to 4 (too breathless to leave the house or breathless when dressing or undressing).",
+	"version": "1.0.0",
+	"status": "active",
+	"date": "2025-01-01T00:00:00+00:00",
+	"subjectType": [
+		"Patient"
+	],
+	"publisher": "K-HEALTHinAIR",
+	"code": [
+		{
+			"system": "http://snomed.info/sct",
+			"code": "870179002",
+			"display": "modified Medical Research Council Dyspnea Scale (assessment scale)"
+		},
+		{
+			"system": "http://loinc.org",
+			"code": "LL5974-2",
+			"display": "MRC breathlessness scale"
+		}
+	],
+	"item": [
+		{
+			"linkId": "date_mmrc",
+			"text": "Date of assessment",
+			"type": "date"
+		},
+		{
+			"linkId": "mmrc_score",
+			"text": "Description of breathlessness",
+			"type": "coding",
+			"code": [
+				{
+					"system": "http://loinc.org",
+					"code": "98070-6",
+					"display": "Medical Research Council breathlessness scale grade"
+				}
+			],
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "LA9629-2",
+						"system": "http://loinc.org",
+						"display": "Grade 1: Not troubled by breathlessness except on strenuous exercise"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "LA9630-0",
+						"system": "http://loinc.org",
+						"display": "Grade 2: Short of breath when hurrying on the level or walking up a slight hill"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "LA9631-8",
+						"system": "http://loinc.org",
+						"display": "Grade 3: Walks slower than most people on the level, stops after a mile or so, or stops after 15 minutes walking at own pace"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "LA11897-8",
+						"system": "http://loinc.org",
+						"display": "Grade 4: Stops for breath after walking about 100 yds or after a few minutes on level ground"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "LA11898-6",
+						"system": "http://loinc.org",
+						"display": "Grade 5: Too breathless to leave the house, or breathless when undressing"
+					}
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,831 @@
+{
+	"resourceType": "Questionnaire",
+	"id": "sacq",
+	"identifier": [
+		{
+			"system": "https://k-healthinair.eu/fhir/questionnaire-codes",
+			"value": "SACQ"
+		}
+	],
+	"url": "https://k-healthinair.eu/fhir/Questionnaire/sacq",
+	"name": "SACQ",
+	"title": "Self-Administered Comorbidity Questionnaire (SACQ)",
+	"description": "The SACQ captures comorbid conditions via patient self-report, evaluating presence, treatment, and impact on daily activities.",
+	"purpose": "The Self-Administered Comorbidity Questionnaire (SACQ) is a tool used to assess the presence of comorbidities in patients. It is a self-administered questionnaire designed to help identify various medical conditions or diseases that may coexist with a primary condition, often focusing on common chronic diseases like diabetes, hypertension, or heart disease.",
+	"version": "1.0.0",
+	"status": "active",
+	"date": "2025-01-01T00:00:00+00:00",
+	"subjectType": [
+		"Patient"
+	],
+	"publisher": "K-HEALTHinAIR",
+	"code": [
+		{
+			"system": "http://snomed.info/sct",
+			"code": "398192003",
+			"display": "Co-morbid conditions (finding)"
+		}
+	],
+	"item": [
+		{
+			"id": "comorbiditiessacq",
+			"text": "Have you ever been told by a doctor that you have any of the following?",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Heart disease (For example, angina, heart attack, or heart failure)"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "High blood pressure"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Lung disease (For example, asthma, chronic bronchitis, or emphysema)"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Diabetes"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Ulcer or stomach disease"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "6",
+						"display": "Kidney disease"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "7",
+						"display": "Liver disease"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "8",
+						"display": "Anemia or other blood disease"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "9",
+						"display": "Cancer/Other cancer (within the last 5 years)"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "10",
+						"display": "Depression"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "11",
+						"display": "Osteoarthritis, degenerative arthritis"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "12",
+						"display": "Back pain"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "13",
+						"display": "Rheumatoid arthritis"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "14",
+						"display": "Other medical problems"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "comorbiditiessacq_others",
+			"text": "14= Other medical problems",
+			"type": "text",
+			"required": false
+		},
+		{
+			"linkId": "comorbiditiessacq_heartdiseasefu1",
+			"text": "Do you receive treatment for this disease?",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "0",
+						"display": "No"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Yes"
+					}
+				}
+			]
+		},
+		[
+			{
+				"linkId": "comorbidities14",
+				"text": "14= Other medical problems",
+				"type": "text"
+			},
+			{
+				"linkId": "comorbiditiessacq_heartdiseasefu1",
+				"text": "Heart disease. Do you receive treatment for this disease?",
+				"type": "coding",
+				"answerOption": [
+					{
+						"valueCoding": {
+							"code": "0",
+							"display": "No"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "1",
+							"display": "Yes"
+						}
+					}
+				]
+			},
+			{
+				"linkId": "comorbiditiessacq_heartdiseasefu2",
+				"text": "Heart disease. Does your disease limit your activities?",
+				"type": "coding",
+				"answerOption": [
+					{
+						"valueCoding": {
+							"code": "0",
+							"display": "No"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "1",
+							"display": "Yes"
+						}
+					}
+				]
+			},
+			{
+				"linkId": "comorbiditiessacq_highbloodpressurefu1",
+				"text": "High blood pressure disease. Do you receive treatment for this disease?",
+				"type": "coding",
+				"answerOption": [
+					{
+						"valueCoding": {
+							"code": "0",
+							"display": "No"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "1",
+							"display": "Yes"
+						}
+					}
+				]
+			},
+			{
+				"linkId": "comorbiditiessacq_highbloodpressurefu2",
+				"text": "High blood pressure disease. Does your disease limit your activities?",
+				"type": "coding",
+				"answerOption": [
+					{
+						"valueCoding": {
+							"code": "0",
+							"display": "No"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "1",
+							"display": "Yes"
+						}
+					}
+				]
+			},
+			{
+				"linkId": "comorbiditiessacq_lungdiseasefu1",
+				"text": "Lung disease. Do you receive treatment for this disease?",
+				"type": "coding",
+				"answerOption": [
+					{
+						"valueCoding": {
+							"code": "0",
+							"display": "No"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "1",
+							"display": "Yes"
+						}
+					}
+				]
+			},
+			{
+				"linkId": "comorbiditiessacq_lungdiseasefu2",
+				"text": "Lung disease. Does your disease limit your activities?",
+				"type": "coding",
+				"answerOption": [
+					{
+						"valueCoding": {
+							"code": "0",
+							"display": "No"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "1",
+							"display": "Yes"
+						}
+					}
+				]
+			},
+			{
+				"linkId": "comorbiditiessacq_diabetesfu1",
+				"text": "Diabetes disease. Do you receive treatment for this disease?",
+				"type": "coding",
+				"answerOption": [
+					{
+						"valueCoding": {
+							"code": "0",
+							"display": "No"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "1",
+							"display": "Yes"
+						}
+					}
+				]
+			},
+			{
+				"linkId": "comorbiditiessacq_diabetesfu2",
+				"text": "Diabetes disease. Does your disease limit your activities?",
+				"type": "coding",
+				"answerOption": [
+					{
+						"valueCoding": {
+							"code": "0",
+							"display": "No"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "1",
+							"display": "Yes"
+						}
+					}
+				]
+			},
+			{
+				"linkId": "comorbiditiessacq_stomachdiseasefu1",
+				"text": "Stomach disease. Do you receive treatment for this disease?",
+				"type": "coding",
+				"answerOption": [
+					{
+						"valueCoding": {
+							"code": "0",
+							"display": "No"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "1",
+							"display": "Yes"
+						}
+					}
+				]
+			},
+			{
+				"linkId": "comorbiditiessacq_stomachdiseasefu2",
+				"text": "Stomach disease. Does your disease limit your activities?",
+				"type": "coding",
+				"answerOption": [
+					{
+						"valueCoding": {
+							"code": "0",
+							"display": "No"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "1",
+							"display": "Yes"
+						}
+					}
+				]
+			},
+			{
+				"linkId": "comorbiditiessacq_kidneydiseasefu1",
+				"text": "Kidney disease.. Do you receive treatment for this disease?",
+				"type": "coding",
+				"answerOption": [
+					{
+						"valueCoding": {
+							"code": "0",
+							"display": "No"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "1",
+							"display": "Yes"
+						}
+					}
+				]
+			},
+			{
+				"linkId": "comorbiditiessacq_kidneydiseasefu2",
+				"text": "Kidney disease. Does your disease limit your activities?",
+				"type": "coding",
+				"answerOption": [
+					{
+						"valueCoding": {
+							"code": "0",
+							"display": "No"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "1",
+							"display": "Yes"
+						}
+					}
+				]
+			},
+			{
+				"linkId": "comorbiditiessacq_liverdiseasefu1",
+				"text": "Liver disease. Do you receive treatment for this disease?",
+				"type": "coding",
+				"answerOption": [
+					{
+						"valueCoding": {
+							"code": "0",
+							"display": "No"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "1",
+							"display": "Yes"
+						}
+					}
+				]
+			},
+			{
+				"linkId": "comorbiditiessacq_liverdiseasefu2",
+				"text": "Liver disease. Does your disease limit your activities?",
+				"type": "coding",
+				"answerOption": [
+					{
+						"valueCoding": {
+							"code": "0",
+							"display": "No"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "1",
+							"display": "Yes"
+						}
+					}
+				]
+			},
+			{
+				"linkId": "comorbiditiessacq_blooddiseasefu1",
+				"text": "Blood disease. Do you receive treatment for this disease?",
+				"type": "coding",
+				"answerOption": [
+					{
+						"valueCoding": {
+							"code": "0",
+							"display": "No"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "1",
+							"display": "Yes"
+						}
+					}
+				]
+			},
+			{
+				"linkId": "comorbiditiessacq_blooddiseasefu2",
+				"text": "Blood disease. Does your disease limit your activities?",
+				"type": "coding",
+				"answerOption": [
+					{
+						"valueCoding": {
+							"code": "0",
+							"display": "No"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "1",
+							"display": "Yes"
+						}
+					}
+				]
+			},
+			{
+				"linkId": "comorbiditiessacq_cancerfu1",
+				"text": "Cancer disease. Do you receive treatment for this disease?",
+				"type": "coding",
+				"answerOption": [
+					{
+						"valueCoding": {
+							"code": "0",
+							"display": "No"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "1",
+							"display": "Yes"
+						}
+					}
+				]
+			},
+			{
+				"linkId": "comorbiditiessacq_cancerfu2",
+				"text": "Cancer disease. Does your disease limit your activities?",
+				"type": "coding",
+				"answerOption": [
+					{
+						"valueCoding": {
+							"code": "0",
+							"display": "No"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "1",
+							"display": "Yes"
+						}
+					}
+				]
+			},
+			{
+				"linkId": "comorbiditiessacq_depressionfu1",
+				"text": "Depression disease. Do you receive treatment for this disease?",
+				"type": "coding",
+				"answerOption": [
+					{
+						"valueCoding": {
+							"code": "0",
+							"display": "No"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "1",
+							"display": "Yes"
+						}
+					}
+				]
+			},
+			{
+				"linkId": "comorbiditiessacq_depressionfu2",
+				"text": "Depression disease. Does your disease limit your activities?",
+				"type": "coding",
+				"answerOption": [
+					{
+						"valueCoding": {
+							"code": "0",
+							"display": "No"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "1",
+							"display": "Yes"
+						}
+					}
+				]
+			},
+			{
+				"linkId": "comorbiditiessacq_osteoarthritisfu1",
+				"text": "Osteoarthritis disease. Do you receive treatment for this disease?",
+				"type": "coding",
+				"answerOption": [
+					{
+						"valueCoding": {
+							"code": "0",
+							"display": "No"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "1",
+							"display": "Yes"
+						}
+					}
+				]
+			},
+			{
+				"linkId": "comorbiditiessacq_osteoarthritisfu2",
+				"text": "Osteoarthritis disease. Does your disease limit your activities?",
+				"type": "coding",
+				"answerOption": [
+					{
+						"valueCoding": {
+							"code": "0",
+							"display": "No"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "1",
+							"display": "Yes"
+						}
+					}
+				]
+			},
+			{
+				"linkId": "comorbiditiessacq_backpainfu1",
+				"text": "Back pain disease. Do you receive treatment for this disease?",
+				"type": "coding",
+				"answerOption": [
+					{
+						"valueCoding": {
+							"code": "0",
+							"display": "No"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "1",
+							"display": "Yes"
+						}
+					}
+				]
+			},
+			{
+				"linkId": "comorbiditiessacq_backpainfu2",
+				"text": "Back pain disease. Does your disease limit your activities?",
+				"type": "coding",
+				"answerOption": [
+					{
+						"valueCoding": {
+							"code": "0",
+							"display": "No"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "1",
+							"display": "Yes"
+						}
+					}
+				]
+			},
+			{
+				"linkId": "comorbiditiessacq_rheumatoidarthritisfu1",
+				"text": "Rheumatoidarthritis disease. Do you receive treatment for this disease?",
+				"type": "coding",
+				"answerOption": [
+					{
+						"valueCoding": {
+							"code": "0",
+							"display": "No"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "1",
+							"display": "Yes"
+						}
+					}
+				]
+			},
+			{
+				"linkId": "comorbiditiessacq_rheumatoidarthritisfu2",
+				"text": "Rheumatoidarthritis disease. Does your disease limit your activities?",
+				"type": "coding",
+				"answerOption": [
+					{
+						"valueCoding": {
+							"code": "0",
+							"display": "No"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "1",
+							"display": "Yes"
+						}
+					}
+				]
+			},
+			{
+				"linkId": "comorbiditiessacq_otherfu1",
+				"text": "Do you receive treatment for Others medicals problems? ",
+				"type": "coding",
+				"answerOption": [
+					{
+						"valueCoding": {
+							"code": "0",
+							"display": "No"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "1",
+							"display": "Yes"
+						}
+					}
+				]
+			},
+			{
+				"linkId": "comorbiditiessacq_otherfu2",
+				"text": "Does your other medical problems limit your activities?",
+				"type": "coding",
+				"answerOption": [
+					{
+						"valueCoding": {
+							"code": "0",
+							"display": "No"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "1",
+							"display": "Yes"
+						}
+					}
+				]
+			},
+			{
+				"linkId": "comorbidities_score",
+				"text": "Total summed Comorbidities score (1-42)",
+				"type": "integer"
+			},
+			{
+				"linkId": "cardiovascularrisk_q3",
+				"text": "What is the patient’s diabetes status?",
+				"type": "coding",
+				"answerOption": [
+					{
+						"valueCoding": {
+							"code": "0",
+							"display": "Patient is not diagnosed with diabetes"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "1",
+							"display": "The patient is diagnosed with Type I diabetes"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "2",
+							"display": "The patient is diagnosed with Type II diabetes"
+						}
+					}
+				]
+			},
+			{
+				"linkId": "pavsday",
+				"text": "On average, how many days per week do you engage in moderate to strenuous exercise (like a brisk walk, slow biking, general gardening)",
+				"type": "integer"
+			},
+			{
+				"linkId": "pavstime",
+				"text": "On average, how many minutes, per day, do you engage in exercise at this level?",
+				"type": "coding",
+				"answerOption": [
+					{
+						"valueCoding": {
+							"code": "0",
+							"display": "0 minutes"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "1",
+							"display": "1-150 minutes"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "2",
+							"display": ">150 minutes"
+						}
+					}
+				]
+			},
+			{
+				"linkId": "pavsdayxpavstime",
+				"text": "Total minutes per week of physical activity (multiply PAVSDAY by PAVSTIME)",
+				"type": "integer"
+			},
+			{
+				"linkId": "seeing",
+				"text": "At the present time, would you say your eyesight, with glasses or contact lenses if you wear them",
+				"type": "coding",
+				"answerOption": [
+					{
+						"valueCoding": {
+							"code": "5",
+							"display": "Excellent"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "4",
+							"display": "Very good"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "2",
+							"display": "Fair"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "3",
+							"display": "Good"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "1",
+							"display": "Poor"
+						}
+					}
+				]
+			},
+			{
+				"linkId": "hearing",
+				"text": "Would you say your hearing is",
+				"type": "coding",
+				"answerOption": [
+					{
+						"valueCoding": {
+							"code": "5",
+							"display": "Excellent"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "4",
+							"display": "Good"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "3",
+							"display": "A little trouble"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "2",
+							"display": "Moderate hearing trouble"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "1",
+							"display": "A lot of trouble"
+						}
+					},
+					{
+						"valueCoding": {
+							"code": "0",
+							"display": "Deaf"
+						}
+					}
+				]
+			}
+		]
+	]
+}

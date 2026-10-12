@@ -1,0 +1,852 @@
+{
+	"resourceType": "Questionnaire",
+	"id": "germany-canteen-staff",
+	"identifier": [
+		{
+			"system": "https://k-healthinair.eu/fhir/questionnaire-codes",
+			"value": "GERMANYCANTEENSTAFF"
+		}
+	],
+	"url": "https://k-healthinair.eu/fhir/Questionnaire/germanycanteenstaff",
+	"name": "GERMANYCANTEENSTAFF",
+	"title": "EXTRA Germany Canteen Staff",
+	"description": "EXTRA Germany Canteen Staff",
+	"purpose": "EXTRA Germany Canteen Staff.",
+	"version": "1.0.0",
+	"status": "active",
+	"date": "2025-01-01T00:00:00+00:00",
+	"subjectType": [
+		"Patient"
+	],
+	"publisher": "K-HEALTHinAIR",
+	"item": [
+		{
+			"linkId": "wp",
+			"text": "Work place conditions - Were you affected by any of the following factors in your workplace in the last month?",
+			"type": "group",
+			"item": [
+				{
+					"linkId": "wp1",
+					"text": "Draft",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes, often (every day)"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Yes, sometimes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "No, never"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "wp2",
+					"text": "High room temperature",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes, often (every day)"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Yes, sometimes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "No, never"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "wp3",
+					"text": "Fluctuating room temperature",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes, often (every day)"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Yes, sometimes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "No, never"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "wp4",
+					"text": "Low room temperature",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes, often (every day)"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Yes, sometimes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "No, never"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "wp5",
+					"text": "Stuffy ('poor') air",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes, often (every day)"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Yes, sometimes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "No, never"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "wp6",
+					"text": "Dry air",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes, often (every day)"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Yes, sometimes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "No, never"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "wp7",
+					"text": "Unpleasant odor",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes, often (every day)"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Yes, sometimes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "No, never"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "wp8",
+					"text": "Static charge in the air ('static shock')",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes, often (every day)"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Yes, sometimes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "No, never"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "wp9",
+					"text": "Dust and dirt",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes, often (every day)"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Yes, sometimes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "No, never"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "wp10",
+					"text": "Do you think your ability to work in the past week was reduced because of poor indoor air quality in the kitchen?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Strongly disagree"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Disagree"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "Neutral/I don't know"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "Agree"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "Strongly agree"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "fatigue",
+					"text": "Fatigue",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes, often (every day)"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Yes, sometimes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "No, never"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "If yes, do you belive this is attributable to your work environment? - Yes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "If yes, do you belive this is attributable to your work environment? - No"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "If yes, do you belive this is attributable to your work environment? - I don't know"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "headache",
+					"text": "Headaches",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes, often (every day)"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Yes, sometimes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "No, never"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "If yes, do you belive this is attributable to your work environment? - Yes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "If yes, do you belive this is attributable to your work environment? - No"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "If yes, do you belive this is attributable to your work environment? - I don't know"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "nausea",
+					"text": "Nausea/Dizziness",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes, often (every day)"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Yes, sometimes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "No, never"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "If yes, do you belive this is attributable to your work environment? - Yes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "If yes, do you belive this is attributable to your work environment? - No"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "If yes, do you belive this is attributable to your work environment? - I don't know"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "concentration",
+					"text": "Difficulty concentrating",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes, often (every day)"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Yes, sometimes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "No, never"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "If yes, do you belive this is attributable to your work environment? - Yes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "If yes, do you belive this is attributable to your work environment? - No"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "If yes, do you belive this is attributable to your work environment? - I don't know"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "itchy_eyes",
+					"text": "Itching, burning, or irritation of the eyes",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes, often (every day)"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Yes, sometimes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "No, never"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "If yes, do you belive this is attributable to your work environment? - Yes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "If yes, do you belive this is attributable to your work environment? - No"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "If yes, do you belive this is attributable to your work environment? - I don't know"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "running_nose",
+					"text": "Irritated, congested, or runny nose",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes, often (every day)"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Yes, sometimes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "No, never"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "If yes, do you belive this is attributable to your work environment? - Yes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "If yes, do you belive this is attributable to your work environment? - No"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "If yes, do you belive this is attributable to your work environment? - I don't know"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "dry_throat",
+					"text": "Hoarse, dry throat",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes, often (every day)"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Yes, sometimes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "No, never"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "If yes, do you belive this is attributable to your work environment? - Yes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "If yes, do you belive this is attributable to your work environment? - No"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "If yes, do you belive this is attributable to your work environment? - I don't know"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "cough",
+					"text": "Coughing",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes, often (every day)"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Yes, sometimes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "No, never"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "If yes, do you belive this is attributable to your work environment? - Yes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "If yes, do you belive this is attributable to your work environment? - No"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "If yes, do you belive this is attributable to your work environment? - I don't know"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "facial_skin",
+					"text": "Dry or reddened facial skin",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes, often (every day)"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Yes, sometimes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "No, never"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "If yes, do you belive this is attributable to your work environment? - Yes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "If yes, do you belive this is attributable to your work environment? - No"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "If yes, do you belive this is attributable to your work environment? - I don't know"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "itchy_ears",
+					"text": "Flaky/itchy scalp or ears",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes, often (every day)"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Yes, sometimes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "No, never"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "If yes, do you belive this is attributable to your work environment? - Yes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "If yes, do you belive this is attributable to your work environment? - No"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "If yes, do you belive this is attributable to your work environment? - I don't know"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "dry_skin",
+					"text": "Dry hands, itching, reddened skin",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "Yes, often (every day)"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "Yes, sometimes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "No, never"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "If yes, do you belive this is attributable to your work environment? - Yes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "If yes, do you belive this is attributable to your work environment? - No"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "If yes, do you belive this is attributable to your work environment? - I don't know"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "iaq_perception4",
+					"text": "Temperature",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "1.Extremley good"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "2"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "3"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "4"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "5"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "6.Extremely bad"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "iaq_perception5",
+					"text": "Air quality",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "1.Extremley good"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "2"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "3"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "4"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "5"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "6.Extremely bad"
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

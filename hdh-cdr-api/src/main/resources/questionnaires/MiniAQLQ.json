@@ -1,0 +1,801 @@
+{
+	"resourceType": "Questionnaire",
+	"id": "mini-aqlq",
+	"identifier": [
+		{
+			"system": "https://k-healthinair.eu/fhir/questionnaire-codes",
+			"value": "MINIAQLQ"
+		}
+	],
+	"url": "https://k-healthinair.eu/fhir/Questionnaire/miniaqlq",
+	"name": "MINIAQLQ",
+	"title": "Mini Asthma Quality of Life Questionnaire (Mini AQLQ)",
+	"description": "The Mini Asthma Quality of Life Questionnaire (Mini AQLQ) measures the functional problems (physical, emotional, social, occupational) that are most troublesome to adults with asthma",
+	"purpose": "A brief 15-item questionnaire assessing the impact of asthma on quality of life. It covers domains such as symptoms, activity limitations, emotional function, and environmental stimuli. Scores range from 1 to 7, with higher scores indicating better quality of life.",
+	"version": "1.0.0",
+	"status": "active",
+	"date": "2025-01-01T00:00:00+00:00",
+	"subjectType": [
+		"Patient"
+	],
+	"publisher": "K-HEALTHinAIR",
+	"code": [
+		{
+			"system": "http://snomed.info/sct",
+			"code": "445074007",			
+			"display": "Mini asthma quality of life questionnaire (assessment scale)"
+		}
+	],
+	"item": [
+		{
+			"linkId": "miniaql-g1",
+			"text": "In general, how much of the time during the last 2 weeks did you:",
+			"type": "group",
+			"item": [
+				{
+					"linkId": "miniaqlq1",
+					"text": "How often during the past week did you feel short of breath as a result of your asthma?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "1 - All of the time"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "2 - Most of the time"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "3 - A good bit of the time"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "4 - Some of the time"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "5 - A little of the time"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "6 - Hardly any of the time"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "7",
+								"display": "7 - None of the time"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "miniaqlq2",
+					"text": "How often did you wake up at night due to asthma symptoms?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "1 - Every night"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "2 - Almost every night"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "3 - Several nights"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "4 - Some nights"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "5 - A few nights"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "6 - Rarely"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "7",
+								"display": "7 - Never"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "miniaqlq3",
+					"text": "How often did you feel wheezy?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "1 - All of the time"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "2 - Most of the time"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "3 - A good bit of the time"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "4 - Some of the time"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "5 - A little of the time"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "6 - Hardly any of the time"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "7",
+								"display": "7 - None of the time"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "miniaqlq4",
+					"text": "How limited were you in performing your daily activities because of your asthma?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "1 - Totally limited"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "2 - Very limited"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "3 - Moderately limited"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "4 - Somewhat limited"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "5 - Slightly limited"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "6 - Minimally limited"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "7",
+								"display": "7 - Not at all limited"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "miniaqlq5",
+					"text": "How limited were you in exercising due to your asthma?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "1 - Totally limited"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "2 - Very limited"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "3 - Moderately limited"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "4 - Somewhat limited"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "5 - Slightly limited"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "6 - Minimally limited"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "7",
+								"display": "7 - Not at all limited"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "miniaqlq6",
+					"text": "How much did you worry about having asthma symptoms in public?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "1 - Extremely worried"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "2 - Very worried"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "3 - Moderately worried"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "4 - Somewhat worried"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "5 - Slightly worried"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "6 - Minimally worried"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "7",
+								"display": "7 - Not at all worried"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "miniaqlq7",
+					"text": "How frustrated did you feel because of your asthma?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "1 - Extremely frustrated"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "2 - Very frustrated"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "3 - Moderately frustrated"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "4 - Somewhat frustrated"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "5 - Slightly frustrated"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "6 - Minimally frustrated"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "7",
+								"display": "7 - Not at all frustrated"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "miniaqlq8",
+					"text": "How concerned were you about your asthma interfering with your relationships?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "1 - Extremely concerned"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "2 - Very concerned"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "3 - Moderately concerned"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "4 - Somewhat concerned"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "5 - Slightly concerned"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "6 - Minimally concerned"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "7",
+								"display": "7 - Not at all concerned"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "miniaqlq9",
+					"text": "How bothered were you by cigarette smoke?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "1 - Extremely bothered"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "2 - Very bothered"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "3 - Moderately bothered"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "4 - Somewhat bothered"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "5 - Slightly bothered"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "6 - Minimally bothered"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "7",
+								"display": "7 - Not at all bothered"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "miniaqlq10",
+					"text": "How bothered were you by strong smells or perfumes?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "1 - Extremely bothered"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "2 - Very bothered"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "3 - Moderately bothered"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "4 - Somewhat bothered"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "5 - Slightly bothered"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "6 - Minimally bothered"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "7",
+								"display": "7 - Not at all bothered"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "qminiaqlq11",
+					"text": "How bothered were you by cold air?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "1 - Extremely bothered"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "2 - Very bothered"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "3 - Moderately bothered"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "4 - Somewhat bothered"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "5 - Slightly bothered"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "6 - Minimally bothered"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "7",
+								"display": "7 - Not at all bothered"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"linkId": "miniaql-g2",
+			"text": "How limited have you been during the last 2 weeks doing these activities as a result of your asthma?",
+			"type": "group",
+			"item": [
+				{
+					"linkId": "miniaqlq12",
+					"text": "How confident were you in controlling your asthma?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "1 - Not at all confident"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "2 - Very little confident"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "3 - Slightly confident"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "4 - Somewhat confident"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "5 - Moderately confident"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "6 - Very confident"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "7",
+								"display": "7 - Extremely confident"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "miniaqlq13",
+					"text": "How often did you avoid certain activities because of your asthma?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "1 - All of the time"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "2 - Most of the time"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "3 - A good bit of the time"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "4 - Some of the time"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "5 - A little of the time"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "6 - Hardly any of the time"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "7",
+								"display": "7 - None of the time"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "miniaqlq14",
+					"text": "How often did you feel limited in your work or school tasks due to asthma?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "1 - All of the time"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "2 - Most of the time"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "3 - A good bit of the time"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "4 - Some of the time"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "5 - A little of the time"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "6 - Hardly any of the time"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "7",
+								"display": "7 - None of the time"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "miniaqlq15",
+					"text": "How much did your asthma interfere with your enjoyment of life?",
+					"type": "coding",
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "1",
+								"display": "1 - Extremely interfered"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "2",
+								"display": "2 - Very much interfered"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "3",
+								"display": "3 - Moderately interfered"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "4",
+								"display": "4 - Somewhat interfered"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "5",
+								"display": "5 - Slightly interfered"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "6",
+								"display": "6 - Minimally interfered"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "7",
+								"display": "7 - Did not interfere at all"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"linkId": "totalscore_miniaqlq",
+			"text": "Overall score",
+			"type": "integer",
+			"code": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "763695004",
+					"display": "Mini Asthma Quality of Life Questionnaire score (observable entity)"
+				}
+			],
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-calculatedExpression",
+					"valueExpression": {
+						"language": "text/fhirpath",
+						"expression": "(item.where(linkId='miniaqlq1').answer.value + item.where(linkId='miniaqlq2').answer.value + item.where(linkId='miniaqlq3').answer.value + item.where(linkId='miniaqlq4').answer.value + item.where(linkId='miniaqlq5').answer.value + item.where(linkId='miniaqlq6').answer.value + item.where(linkId='miniaqlq7').answer.value + item.where(linkId='miniaqlq8').answer.value + item.where(linkId='miniaqlq9').answer.value + item.where(linkId='miniaqlq10').answer.value + item.where(linkId='miniaqlq11').answer.value + item.where(linkId='miniaqlq12').answer.value + item.where(linkId='miniaqlq13').answer.value + item.where(linkId='miniaqlq14').answer.value + item.where(linkId='miniaqlq15').answer.value)/15"
+					}
+				}
+			]
+		}
+	]
+}

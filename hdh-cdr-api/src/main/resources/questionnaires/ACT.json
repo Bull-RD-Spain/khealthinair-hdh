@@ -1,0 +1,237 @@
+{
+	"resourceType": "Questionnaire",
+	"id": "act",
+	"identifier": [
+		{
+			"system": "https://k-healthinair.eu/fhir/questionnaire-codes",
+			"value": "ACT"
+		}
+	],
+	"url": "https://k-healthinair.eu/fhir/Questionnaire/act",
+	"name": "ACT",
+	"title": "Asthma Control Test (ACT)",
+	"description": "Asthma Control Test (ACT) is a simple, patient-completed questionnaire used to assess asthma control.",
+	"purpose": "A 5-item self-administered questionnaire designed to assess asthma control in individuals aged 12 and older. It evaluates symptoms, medication use, and overall asthma control over the past 4 weeks. Scores range from 5 to 25, with higher scores indicating better control. A score below 20 suggests inadequate asthma control",
+	"version": "1.0.0",
+	"status": "active",
+	"date": "2025-01-01T00:00:00+00:00",
+	"subjectType": [
+		"Patient"
+	],
+	"publisher": "K-HEALTHinAIR",
+	"code": [
+		{
+			"system": "http://snomed.info/sct",
+			"code": "443450003",
+			"display": "Asthma control test (assessment scale)"
+		}
+	],
+	"item": [
+		{
+			"id": "act_1",
+			"text": "In the past 4 weeks, how much of the time did your asthma keep you from getting as much done at work, school or at home?",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "None of the time"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "A little of the time"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Some of the time"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Most of the time"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "All of the time"
+					}
+				}
+			]
+		},
+		{
+			"id": "act_2",
+			"text": "During the past 4 weeks, how often have you had shortness of breath?",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Not at all"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Once or twice a week"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "3 to 6 times a week"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Once a day"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "More than once a day"
+					}
+				}
+			]
+		},
+		{
+			"id": "act_3",
+			"text": "During the past 4 weeks, how often did your asthma symptoms (wheezing, coughing, shortness of breath, chest tightness or pain) wake you up at night or earlier than usual in the morning?",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Not at all"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Once or twice"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Once a week"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "2 to 3 nights a week"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "4 or more nights a week"
+					}
+				}
+			]
+		},
+		{
+			"id": "act_4",
+			"text": "During the past 4 weeks, how often have you used your rescue inhaler or nebulizer medication (such as albuterol)?",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Not at all"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Once a week or less"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "2 or 3 times a week"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Once a day"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "More than once a day"
+					}
+				}
+			]
+		},
+		{
+			"id": "act_5",
+			"text": "How would you rate your asthma control during the past 4 weeks?",
+			"type": "coding",
+			"answerOption": [
+				{
+					"valueCoding": {
+						"code": "5",
+						"display": "Completely controlled"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "4",
+						"display": "Well controlled"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "3",
+						"display": "Somewhat controlled"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "Poorly controlled"
+					}
+				},
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Not controlled at all"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "act_score",
+			"text": "Sum of responses to all 5 questions (range 5-25): 5-15: Very poorly controlled asthma, 16-19: Not well controlled asthma, 20-25: Well controlled asthma.",
+			"type": "integer",
+			"code": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "443117005",
+					"display": "Asthma control test score"
+				}
+			],
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-calculatedExpression",
+					"valueExpression": {
+						"language": "text/fhirpath",
+						"expression": "item.where(linkId='act_1').answer.value + item.where(linkId='act_2').answer.value + item.where(linkId='act_3').answer.value + item.where(linkId='act_4').answer.value + item.where(linkId='act_5').answer.value"
+					}
+				}
+			]
+		}
+	]
+}

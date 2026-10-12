@@ -1,0 +1,6 @@
+# Environment files with credentials - never commit real values
+.env
+.env.*
+*.env
+!*.env.example
+!*.env.sample

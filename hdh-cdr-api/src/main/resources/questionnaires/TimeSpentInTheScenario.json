@@ -1,0 +1,36 @@
+{
+	"resourceType": "Questionnaire",
+	"id": "time-spent-in-the-scenario",
+	"identifier": [
+		{
+			"system": "https://k-healthinair.eu/fhir/questionnaire-codes",
+			"value": "TIMESPENTINTHESCENARIO"
+		}
+	],
+	"url": "https://k-healthinair.eu/fhir/Questionnaire/timespentinthescenario",
+	"name": "TIMESPENTINTHESCENARIO",
+	"title": "Time Spent In The Scenario",
+	"description": "TimeSpentInTheScenario",
+	"purpose": "Collect information about the time spent in and out the subject home.",
+	"version": "1.0.0",
+	"status": "active",
+	"date": "2025-01-01T00:00:00+00:00",
+	"subjectType": [
+		"Patient"
+	],
+	"publisher": "K-HEALTHinAIR",
+	"item": [
+		{
+			"linkId": "timespent1",
+			"text": "Hours spent outside/in nature/in healthy air LAST WEEK? (Hours/day)",
+			"type": "integer",
+			"required": true
+		},
+		{
+			"linkId": "timespent2",
+			"text": "Hours spent in the scenario associated to the ID of each participant? (Hours/day)",
+			"type": "integer",
+			"required": true
+		}
+	]
+}

@@ -1,0 +1,76 @@
+server:
+  port: 8081
+  forward-headers-strategy: NATIVE
+  servlet:
+    context-path: ${CDR_API_CONTEXTPATH:/hdh-cdr-api}
+  error:
+    include-message: always # always|on-param|never
+    include-binding-errors: always # always|on-param|never
+    whitelabel:
+      enabled: false
+    path: /error
+spring:
+  application:
+    name: hdh-cdr-api
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 20MB
+  profiles:
+    active: ${CDR_LOGGING_MODE:dev}
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+  jackson:
+    mapper:
+      SORT_PROPERTIES_ALPHABETICALLY: false
+    serialization: # com.fasterxml.jackson.databind.cfg.ConfigFeature.SerializationFeature
+      WRITE_SELF_REFERENCES_AS_NULL: true
+      ORDER_MAP_ENTRIES_BY_KEYS: false
+      INDENT_OUTPUT: true
+      write-dates-as-timestamps: false
+  security:
+    api-key-admin: ${APIKEY_ADMIN:}
+    api-key-pilot: ${APIKEY_PILOT:}
+    #user: # just to avoid auto-generated
+    #  name: admin
+    #  password:
+security:
+  ignored: "/**"
+  basic:
+    enabled: false
+logging:
+  level:
+    org.springframework.boot.autoconfigure.logging: INFO
+management:
+  endpoints:
+    web:
+      base-path: '/actuator'
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      enabled: true
+      show-details: 'never'
+springdoc: # https://springdoc.org/properties.html
+  pre-loading-enabled: true # Needed so ApiKeyRequestFilter will be ready ASAP
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+    filter: "Data" # true
+    tryItOutEnabled: false
+    defaultModelExpandDepth: 1
+    defaultModelsExpandDepth: 3
+    displayOperationId: true
+    showCommonExtensions: true
+    defaultModelRendering: 'example'
+    docExpansion: 'none'
+    operationsSorter: 'method'
+    tagsSorter: 'alpha'
+fhir:
+  endpoint: "${CDR_HAPI_FHIR_SERVER_ADDRESS:http://localhost:8080/hdh-cdr}/fhir"
+  version: "@project.version@"
+  language: 'EN'
