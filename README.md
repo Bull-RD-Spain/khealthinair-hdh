@@ -15,3 +15,11 @@ Based on FastAPI and fhirclient, provides the proect interface to ingest and acc
 ## Prerequisites
 
 In order to run this platform, you should have this project code, which contains several sub-componets, checked out from this public repository (https://github.com/Bull-RD-Spain/khealthinair-hdh).
+
+## License
+
+Copyright © 2021-2026 Bull SAS
+
+SPDX-License-Identifier: GPL-3.0-or-later
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. See [LICENSE.txt](LICENSE.txt) for the full text, and [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md) for third-party components.
